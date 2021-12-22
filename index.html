@@ -6,17 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a1ec1a490c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" media="screen and (max-width: 768px)"  href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:ital,wght@0,300;1,500&display=swap" rel="stylesheet"> 
+    <title>ohmyfood</title>
 </head>
 <body>
     <header>
-        <nav>
-            <img src="./assets/logo/ohmyfood.png">
+        <nav class="navbar">
+            <a href="index.html">
+                <img  class="navbar__logo" src="./assets/logo/ohmyfood.png">
+            </a>
         </nav>
-        <form>
-            <input type="search" class="header__search" placeholder="Paris, Belleville"><i class ="fas fa-map-marker-alt"></i></input>
-            <h1>Réservez le menu qui vous convient</h1>
-            <label>Découvrez des restaurants d'exceptions, selectionnés par nos soin.</label>
+        <form class="header__form">
+            <span class="header__search"> 
+                <label>
+                    <i class="fas fa-map-marker-alt"></i>
+                </label>
+                <input type="search"  placeholder="Paris, Belleville">
+            </span>
+            
+            <h1 class="header__title">Réservez le menu qui vous convient</h1>
+            <span class="header__subtitle">Découvrez des restaurants d'exceptions, selectionnés par nos soin.</span>
             <button class="header__button">Explorez nos restaurants</button>
         </form>
     </header>
