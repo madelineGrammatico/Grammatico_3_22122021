@@ -1,0 +1,29 @@
+.header__form {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #f0f0f0;
+    padding-bottom: 3rem;
+
+    .header__title {
+        @extend %text;
+        width: 60%;
+        
+        font-size: 1.3rem;
+        font-weight: 900;
+    }
+    
+    .header__subtitle {
+        @extend %text;
+        max-width: 75%;
+    
+        font-weight: 300;
+    }
+
+   
+   
+     
+   
+}
