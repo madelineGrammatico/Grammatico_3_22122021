@@ -91,7 +91,7 @@ iframe {
   height: 100%;
 }
 
-.header__form .header__button, .header__form .header__subtitle, .header__form .header__title {
+input[type=search], .header__form .header__button, .header__form .header__subtitle, .header__form .header__title {
   text-align: center;
   font-family: "roboto", sans-serif;
 }
@@ -146,13 +146,8 @@ iframe {
 .header__form .header__search label i {
   padding: 0rem 1rem;
 }
-.header__form .header__search input::search {
-  flex: 1 40%;
-}
 .header__form .header__search span input::placeholder {
-  width: fit-content;
   opacity: 1;
-  font-weight: bold;
 }
 .header__form .header__button {
   width: 65%;
@@ -162,6 +157,11 @@ iframe {
   box-shadow: 0px 3px 10px #8f8f8f;
   color: white;
   font-weight: bold;
+}
+
+input[type=search] {
+  width: 35%;
+  text-align: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */
