@@ -1,7 +1,53 @@
-.card--fonctionnement {
-    @include card;
+ol {
+    list-style: none;
+    counter-reset: li;;
+   
+}
+li::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 3em;
+    width: 2rem;
+    height: 2rem;
+    margin: 1.5em 0px;
+    text-align: center;
+    direction: rtl;
+    content: counter(li);
+    color: white;
+    background-color: #9356DC;
+    
+    
+    border-radius: 50%;
 }
 
+li {
+    counter-increment: li;
+    
+
+
+}
+.card--fonctionnement {
+    @include card;
+    overflow: inherit;
+
+    height: 5em;
+
+    display: flex;
+    align-items: center;
+    border-radius: 1.5em;
+    vertical-align: middle;
+    margin-bottom: .5em;
+
+    span {
+        color: black;
+        
+        i {
+            padding: 0px 1.5em 0px 3em;
+        }
+    }
+}
 .card--restaurant {
     @include card;   
 
