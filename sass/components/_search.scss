@@ -17,6 +17,9 @@
 
     label i {
         padding: 0rem 1rem;
+        -webkit-text-fill-color:hotpink;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
     }
    
      input::placeholder {

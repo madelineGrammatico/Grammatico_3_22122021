@@ -1,0 +1,30 @@
+.card {
+    width: 90%;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 0px 0px 5px hotpink;
+    border-color: solid hotpink 2px;
+
+    .fa-heart {
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: rgb(0, 0, 0);
+        transition : -webkit-text-fill-color 1s ease-in-out;
+    }
+
+    .fa-heart:hover{
+        -webkit-text-fill-color: hotpink;
+    }
+    a {
+        width:100%;
+        
+    }
+    figure {
+        width: 100%;
+        margin: inherit;
+        object-fit: cover;
+    }
+    img {
+        object-fit: cover;
+    }
+}
