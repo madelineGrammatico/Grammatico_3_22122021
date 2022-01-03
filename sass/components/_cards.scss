@@ -40,7 +40,9 @@ aside {
     align-items: center;
     border-radius: 1.5em;
     vertical-align: middle;
+
     margin-bottom: 1.5em;
+    background-color: $lightGray;
 
     span {
         color: black;
@@ -63,7 +65,7 @@ aside {
     }
 
     .fa-heart:hover{
-        -webkit-text-fill-color: hotpink;
+        -webkit-text-fill-color: $secondary;
     }
     a {
         width:100%;

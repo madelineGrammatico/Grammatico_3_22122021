@@ -126,7 +126,7 @@ iframe {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  background-color: #e7e6e6;
+  background-color: #eaeaea;
 }
 .header__search label {
   display: flex;
@@ -193,6 +193,7 @@ aside li {
   border-radius: 1.5em;
   vertical-align: middle;
   margin-bottom: 1.5em;
+  background-color: #f6f6f6;
 }
 .card--fonctionnement span {
   color: black;
@@ -215,7 +216,7 @@ aside li {
   transition: -webkit-text-fill-color 1s ease-in-out;
 }
 .card--restaurant .fa-heart:hover {
-  -webkit-text-fill-color: hotpink;
+  -webkit-text-fill-color: #FF79DA;
 }
 .card--restaurant a {
   width: 100%;
@@ -251,8 +252,13 @@ aside li {
 }
 
 .restaurants {
-  background-color: #e7e6e6;
+  background-color: #f6f6f6;
   padding: 1.5rem;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
