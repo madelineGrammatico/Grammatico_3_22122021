@@ -1,32 +1,34 @@
-ol {
+aside {
+    ol {
     list-style: none;
-    counter-reset: li;;
-   
-}
-li::before {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 3em;
-    width: 2rem;
-    height: 2rem;
-    margin: 1.5em 0px;
-    text-align: center;
-    direction: rtl;
-    content: counter(li);
-    color: white;
-    background-color: #9356DC;
+    counter-reset: li;
     
-    
-    border-radius: 50%;
-}
+    }
+    li::before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 3em;
+        width: 2rem;
+        height: 2rem;
+        margin: 1.5em 0px;
+        text-align: center;
+        direction: rtl;
+        content: counter(li);
+        color: white;
+        background-color: #9356DC;
+        
+        
+        border-radius: 50%;
+    }
 
-li {
-    counter-increment: li;
-    
+    li {
+        counter-increment: li;
+        
 
 
+    }
 }
 .card--fonctionnement {
     @include card;
@@ -38,7 +40,7 @@ li {
     align-items: center;
     border-radius: 1.5em;
     vertical-align: middle;
-    margin-bottom: .5em;
+    margin-bottom: 1.5em;
 
     span {
         color: black;
@@ -48,8 +50,10 @@ li {
         }
     }
 }
+
 .card--restaurant {
-    @include card;   
+    @include card; 
+    margin-bottom: 1.5em;  
 
     .fa-heart {
         -webkit-text-fill-color: white;
@@ -70,8 +74,20 @@ li {
         margin: inherit;
         object-fit: cover;
     }
-    img {
-        object-fit: cover;
+    figcaption {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        padding: 1em;
+
+        h3 {
+            flex: 100%;
+            padding-bottom: .5em;
+        }
+        p {
+            flex: 2;
+        }
     }
 }
 .card--plat {
