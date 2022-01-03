@@ -169,32 +169,39 @@ iframe {
   font-weight: bold;
 }
 
-.card {
-  width: 90%;
-  height: fit-content;
+.card--fonctionnement {
   background-color: white;
-  box-shadow: 0px 0px 5px hotpink;
-  border-color: solid hotpink 2px;
+  box-shadow: 0px 0px 5px #aaaaaa;
 }
-.card .fa-heart {
+
+.card--restaurant {
+  background-color: white;
+  box-shadow: 0px 0px 5px #aaaaaa;
+}
+.card--restaurant .fa-heart {
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
   transition: -webkit-text-fill-color 1s ease-in-out;
 }
-.card .fa-heart:hover {
+.card--restaurant .fa-heart:hover {
   -webkit-text-fill-color: hotpink;
 }
-.card a {
+.card--restaurant a {
   width: 100%;
 }
-.card figure {
+.card--restaurant figure {
   width: 100%;
   margin: inherit;
   object-fit: cover;
 }
-.card img {
+.card--restaurant img {
   object-fit: cover;
+}
+
+.card--plat {
+  background-color: white;
+  box-shadow: 0px 0px 5px #aaaaaa;
 }
 
 .restaurants {
