@@ -1,3 +1,13 @@
+.fonctionnement {
+    padding: 1.5rem;
+}
 .restaurants {
-    background-color: #e7e6e6;
+    background-color: $lightGray;
+    padding: 1.5rem;
+}
+
+footer {
+    background-color: $darkGray;
+    color: white;
+    padding: 1.5rem;
 }
