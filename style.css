@@ -146,6 +146,9 @@ iframe {
 }
 .header__search label i {
   padding: 0rem 1rem;
+  -webkit-text-fill-color: hotpink;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 .header__search input::placeholder {
   opacity: 1;
@@ -163,6 +166,38 @@ iframe {
   padding: 1rem 1.5rem;
   color: white;
   font-weight: bold;
+}
+
+.card {
+  width: 90%;
+  height: fit-content;
+  background-color: white;
+  box-shadow: 0px 0px 5px hotpink;
+  border-color: solid hotpink 2px;
+}
+.card .fa-heart {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  transition: -webkit-text-fill-color 1s ease-in-out;
+}
+.card .fa-heart:hover {
+  -webkit-text-fill-color: hotpink;
+}
+.card a {
+  width: 100%;
+}
+.card figure {
+  width: 100%;
+  margin: inherit;
+  object-fit: cover;
+}
+.card img {
+  object-fit: cover;
+}
+
+.restaurants {
+  background-color: #e7e6e6;
 }
 
 /*# sourceMappingURL=style.css.map */
