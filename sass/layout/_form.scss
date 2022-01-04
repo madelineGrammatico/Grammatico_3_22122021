@@ -29,4 +29,8 @@
     background-color: $lightGray;
     border-radius: 3em 3em 0px 0px;
     padding: 1.5em ;
+
+    .restaurant__typesPlates {
+        border-bottom: 4px solid $tertiary;
+    }
 }

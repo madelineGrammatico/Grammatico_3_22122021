@@ -114,6 +114,15 @@ h3 {
   padding-bottom: 0.5em;
 }
 
+.logo, .restaurant__heading {
+  font-family: "shrikhand", sans-sertif;
+  font-size: 2em;
+}
+
+.footer__heading {
+  font-family: "shrikhand", sans-sertif;
+}
+
 .navbar, .navbar a {
   width: 100%;
   box-shadow: 0px 0px 5px #adadad;
@@ -151,6 +160,9 @@ h3 {
   background-color: #f6f6f6;
   border-radius: 3em 3em 0px 0px;
   padding: 1.5em;
+}
+.restaurant__form .restaurant__typesPlates {
+  border-bottom: 4px solid #99E2D0;
 }
 
 .restaurant__form {
