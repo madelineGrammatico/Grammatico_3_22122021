@@ -1,14 +1,11 @@
 .header__button {
     @extend %text;
-    width: fit-content;
+    @include btn;
 
+}
 
-    border-radius: 5rem;
-    background: linear-gradient(175deg, $secondary 15%, $primary);
-    box-shadow: 0px 7px 7px #c0c0c0;
-    padding: 1rem 1.5rem;
-
-    color: white;
-    font-weight: bold;
-
+.restaurant__button {
+    @extend %text;
+    @include btn;
+    margin: 3em auto;
 }

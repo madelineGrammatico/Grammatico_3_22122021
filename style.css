@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.header__button, .header__search input[type=search], .header__form .header__subtitle, .header__form .header__title {
+.restaurant__button, .header__button, .header__search input[type=search], .header__form .header__subtitle, .header__form .header__title {
   text-align: center;
   font-family: "roboto", sans-serif;
 }
@@ -114,6 +114,15 @@ h3 {
   padding-bottom: 0.5em;
 }
 
+.logo, .restaurant__heading {
+  font-family: "shrikhand", sans-sertif;
+  font-size: 2em;
+}
+
+.footer__heading {
+  font-family: "shrikhand", sans-sertif;
+}
+
 .navbar, .navbar a {
   width: 100%;
   box-shadow: 0px 0px 5px #adadad;
@@ -133,17 +142,33 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 1.5em;
   background-color: #f6f6f6;
   padding-bottom: 3rem;
 }
 .header__form .header__title {
-  width: 60%;
+  width: 100%;
   font-size: 1.3rem;
   font-weight: 900;
 }
 .header__form .header__subtitle {
   max-width: 75%;
   font-weight: 300;
+}
+
+.restaurant__form {
+  background-color: #f6f6f6;
+  border-radius: 3em 3em 0px 0px;
+  padding: 1.5em;
+}
+.restaurant__form .restaurant__typesPlates {
+  border-bottom: 4px solid #99E2D0;
+}
+
+.restaurant__form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5em;
 }
 
 .header__search {
@@ -153,6 +178,7 @@ h3 {
   flex-flow: row nowrap;
   justify-content: center;
   background-color: #eaeaea;
+  padding: 0.7rem 5rem;
 }
 .header__search label {
   display: flex;
@@ -161,9 +187,6 @@ h3 {
 }
 .header__search label i {
   padding: 0rem 1rem;
-  -webkit-text-fill-color: #9356DC;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
 }
 .header__search input::placeholder {
   opacity: 1;
@@ -185,9 +208,23 @@ h3 {
   font-weight: bold;
 }
 
+.restaurant__button {
+  width: fit-content;
+  border-radius: 5rem;
+  background: linear-gradient(175deg, #FF79DA 15%, #9356DC);
+  box-shadow: 0px 7px 7px #c0c0c0;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-weight: bold;
+  margin: 3em auto;
+}
+
 aside ol {
   list-style: none;
   counter-reset: li;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5em;
 }
 aside li::before {
   display: flex;
@@ -214,13 +251,13 @@ aside li {
   box-shadow: 0px 3px 6px #aaaaaa;
   border-radius: 1em;
   overflow: hidden;
+  text-overflow: ellipsis;
   overflow: inherit;
   height: 5em;
   display: flex;
   align-items: center;
   border-radius: 1.5em;
   vertical-align: middle;
-  margin-bottom: 1.5em;
   background-color: #f6f6f6;
 }
 .card--fonctionnement span {
@@ -236,6 +273,7 @@ aside li {
   box-shadow: 0px 3px 6px #aaaaaa;
   border-radius: 1em;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card--restaurant a {
   width: 100%;
@@ -302,6 +340,51 @@ aside li {
   box-shadow: 0px 3px 6px #aaaaaa;
   border-radius: 1em;
   overflow: hidden;
+  text-overflow: ellipsis;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5em;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "title title checked" "sub-title price checked";
+  grid-gap: 0px;
+}
+.card--plat span {
+  padding: 0.3em 1em;
+  vertical-align: middle;
+}
+.card--plat .title {
+  grid-area: title;
+  padding-top: 1em;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+.card--plat .sub-title {
+  display: inline;
+  grid-area: sub-title;
+  padding-bottom: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+}
+.card--plat .price {
+  grid-area: price;
+  text-align: end;
+}
+.card--plat input[type=checkbox], .card--plat .checked {
+  display: none;
+}
+.card--plat input[type=checkbox]:checked ~ .checked {
+  display: block;
+  color: white;
+  background-color: #99E2D0;
+  grid-area: checked;
+  width: 100%;
+  height: 100%;
+}
+.card--plat input[type=checkbox]:checked ~ .checked i {
+  padding: 0px 0.5em;
+  font-size: 1.5em;
 }
 
 .fonctionnement {
@@ -309,6 +392,9 @@ aside li {
 }
 
 .restaurants {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5em;
   background-color: #f6f6f6;
   padding: 1.5rem;
 }
@@ -317,6 +403,20 @@ footer {
   background-color: #353535;
   color: white;
   padding: 1.5rem;
+}
+
+.restaurant__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 4fr;
+}
+.restaurant__container img {
+  grid-row: 1;
+  object-fit: cover;
+  aspect-ratio: 1.5/1;
+}
+.restaurant__container form {
+  grid-row: 2/span 3;
 }
 
 /*# sourceMappingURL=style.css.map */
