@@ -4,7 +4,7 @@
 
 }
 
-button {
+.restaurant__button {
     @extend %text;
     @include btn;
     margin: 3em auto;
