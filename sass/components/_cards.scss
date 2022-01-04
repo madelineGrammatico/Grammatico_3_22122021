@@ -160,8 +160,12 @@ aside {
         font-weight: 800;
     }
     .sub-title {
+        display: inline;
         grid-area: sub-title;
         padding-bottom: 1em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: pre;
     }
     .price {
         grid-area: price;

@@ -346,8 +346,12 @@ aside li {
   font-weight: 800;
 }
 .card--plat .sub-title {
+  display: inline;
   grid-area: sub-title;
   padding-bottom: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
 }
 .card--plat .price {
   grid-area: price;
