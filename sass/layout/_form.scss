@@ -4,12 +4,13 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 1.5em;
     background-color:  #f6f6f6;
     padding-bottom: 3rem;
 
     .header__title {
         @extend %text;
-        width: 60%;
+        width: 100%;
         
         font-size: 1.3rem;
         font-weight: 900;
@@ -21,9 +22,11 @@
     
         font-weight: 300;
     }
+   
+}
 
-   
-   
-     
-   
+.restaurant__form {
+    background-color: $lightGray;
+    border-radius: 3em 3em 0px 0px;
+    padding: 1.5em ;
 }

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.header__button, .header__search input[type=search], .header__form .header__subtitle, .header__form .header__title {
+button, .header__button, .header__search input[type=search], .header__form .header__subtitle, .header__form .header__title {
   text-align: center;
   font-family: "roboto", sans-serif;
 }
@@ -133,17 +133,24 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 1.5em;
   background-color: #f6f6f6;
   padding-bottom: 3rem;
 }
 .header__form .header__title {
-  width: 60%;
+  width: 100%;
   font-size: 1.3rem;
   font-weight: 900;
 }
 .header__form .header__subtitle {
   max-width: 75%;
   font-weight: 300;
+}
+
+.restaurant__form {
+  background-color: #f6f6f6;
+  border-radius: 3em 3em 0px 0px;
+  padding: 1.5em;
 }
 
 .header__search {
@@ -153,6 +160,7 @@ h3 {
   flex-flow: row nowrap;
   justify-content: center;
   background-color: #eaeaea;
+  padding: 0.7rem 5rem;
 }
 .header__search label {
   display: flex;
@@ -161,9 +169,6 @@ h3 {
 }
 .header__search label i {
   padding: 0rem 1rem;
-  -webkit-text-fill-color: #9356DC;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
 }
 .header__search input::placeholder {
   opacity: 1;
@@ -183,9 +188,23 @@ h3 {
   font-weight: bold;
 }
 
+button {
+  width: fit-content;
+  border-radius: 5rem;
+  background: linear-gradient(175deg, #FF79DA 15%, #9356DC);
+  box-shadow: 0px 7px 7px #c0c0c0;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-weight: bold;
+  margin: 3em auto;
+}
+
 aside ol {
   list-style: none;
   counter-reset: li;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5em;
 }
 aside li::before {
   display: flex;
@@ -212,13 +231,13 @@ aside li {
   box-shadow: 0px 3px 6px #aaaaaa;
   border-radius: 1em;
   overflow: hidden;
+  text-overflow: ellipsis;
   overflow: inherit;
   height: 5em;
   display: flex;
   align-items: center;
   border-radius: 1.5em;
   vertical-align: middle;
-  margin-bottom: 1.5em;
   background-color: #f6f6f6;
 }
 .card--fonctionnement span {
@@ -234,6 +253,7 @@ aside li {
   box-shadow: 0px 3px 6px #aaaaaa;
   border-radius: 1em;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card--restaurant a {
   width: 100%;
@@ -300,6 +320,38 @@ aside li {
   box-shadow: 0px 3px 6px #aaaaaa;
   border-radius: 1em;
   overflow: hidden;
+  text-overflow: ellipsis;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5em;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "title title checked" "sub-title price checked";
+  grid-gap: inherit;
+}
+.card--plat span {
+  padding: 1em;
+  vertical-align: center;
+}
+.card--plat .title {
+  grid-area: title;
+}
+.card--plat .sub-title {
+  grid-area: sub-title;
+}
+.card--plat .price {
+  grid-area: price;
+}
+.card--plat input[type=checkbox], .card--plat .checked {
+  display: none;
+}
+.card--plat input[type=checkbox]:checked ~ .checked {
+  display: block;
+  color: white;
+  background-color: #99E2D0;
+  grid-area: checked;
+  width: 100%;
+  height: 100%;
 }
 
 .fonctionnement {
@@ -307,6 +359,9 @@ aside li {
 }
 
 .restaurants {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5em;
   background-color: #f6f6f6;
   padding: 1.5rem;
 }

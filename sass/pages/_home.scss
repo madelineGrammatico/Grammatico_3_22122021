@@ -2,6 +2,7 @@
     padding: 1.5rem;
 }
 .restaurants {
+    @include grid;
     background-color: $lightGray;
     padding: 1.5rem;
 }
