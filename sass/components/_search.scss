@@ -8,9 +8,14 @@
     
     background-color: $mediumGray;
     padding: .7rem 5rem;
-
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     label {
         display: flex;
+        
         justify-content: center;
         align-items: center;
     }
@@ -25,7 +30,7 @@
     }
     input[type=search] {
         @extend %text;
-        width: 35%;
+       width: fit-content;
         text-align: inherit;
         
     }

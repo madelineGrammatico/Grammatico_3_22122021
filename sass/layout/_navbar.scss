@@ -1,7 +1,6 @@
 .navbar {
 
     width: 100%;
-    
     box-shadow: 0px 0px 5px #adadad;
     a {
         @extend .navbar;
@@ -10,8 +9,5 @@
         align-items: center;
         background-color: white;
 
-        .navbar__logo {
-            width: 45%;
-        }
     }
 }
