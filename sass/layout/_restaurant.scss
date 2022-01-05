@@ -1,0 +1,17 @@
+.restaurant__heading__wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .restaurant__heading {
+        display: block;
+        flex: 1 80%;
+    }
+
+    i {
+        display: block;
+        flex: 2;
+        font-size: 2em;
+    }
+}
