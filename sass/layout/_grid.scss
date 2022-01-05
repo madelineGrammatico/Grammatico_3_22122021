@@ -58,3 +58,68 @@
         grid-area: checked;
     }
 }
+
+@media #{$medium-up} {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: .5fr 1fr 2fr .5fr;
+        grid-gap: 0px;
+        
+
+        header{
+            grid-row: 1;
+            grid-column: 1/ span 2;
+        }
+        .fonctionnement {
+            grid-row: 2;
+            grid-column: 1/ span 2;
+            
+        }
+        footer {
+            grid-column: 1/ span 2;
+        }
+
+    }
+    .restaurants {
+        @include grid;
+        grid-column: 1/ span 2;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 4em 1fr 1fr;
+        h2 {
+            grid-column: 1 / span 2;
+        }
+    }
+}
+@media #{$large-up} {
+    body {
+        height: fit-content;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 2fr .5fr;
+        grid-gap: 0px;
+        
+
+        header{
+            grid-row: 1;
+            grid-column: 1/ span 2;
+        }
+        .fonctionnement {
+            grid-column: 1;
+        }
+        footer {
+            grid-column: 1/ span 2;
+        }
+
+    }
+    .restaurants {
+        @include grid;
+        grid-column: 2;
+        grig-row: 2;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 4em 1fr 1fr;
+        h2 {
+            grid-column: 1 / span 2;
+        }
+    }
+}
