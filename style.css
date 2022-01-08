@@ -20,7 +20,7 @@ html {
 html, body, nav, header, footer, div, span,
 h1, h2, h3, p,
 a, img,
-ul, li,
+ul, ol, li,
 table, form, label, input, textarea, select, button {
   margin: 0;
   padding: 0;
@@ -178,6 +178,11 @@ h3 {
   font-size: 2em;
 }
 
+.fonctionnement {
+  display: grid;
+  grid-gap: 1.5em;
+  grid-template-rows: 4em 0.5fr;
+}
 .fonctionnement ol {
   display: grid;
   grid-gap: 1.5em;
@@ -232,21 +237,21 @@ h3 {
 }
 
 @media only screen and (min-width:768px) {
-  body {
+  .home__body {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 0.5fr 1fr 2fr 0.5fr;
     grid-gap: 0px;
   }
-  body header {
+  .home__body header {
     grid-row: 1;
     grid-column: 1/span 2;
   }
-  body .fonctionnement {
+  .home__body .fonctionnement {
     grid-row: 2;
     grid-column: 1/span 2;
   }
-  body footer {
+  .home__body footer {
     grid-column: 1/span 2;
   }
 
@@ -261,22 +266,22 @@ h3 {
     grid-column: 1/span 2;
   }
 }
-@media only screen and (min-width:1000px) {
-  body {
+@media only screen and (min-width:1250px) {
+  .home__body {
     height: fit-content;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr 0.5fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
     grid-gap: 0px;
   }
-  body header {
+  .home__body header {
     grid-row: 1;
     grid-column: 1/span 2;
   }
-  body .fonctionnement {
+  .home__body .fonctionnement {
     grid-column: 1;
   }
-  body footer {
+  .home__body footer {
     grid-column: 1/span 2;
   }
 
@@ -284,7 +289,7 @@ h3 {
     display: grid;
     grid-gap: 1.5em;
     grid-column: 2;
-    grig-row: 2;
+    grid-row: 2;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 4em 1fr 1fr;
   }
@@ -375,16 +380,20 @@ footer i {
   color: #FF79DA;
 }
 
+.fonctionnement {
+  max-width: 600px;
+}
 .fonctionnement ol {
   list-style: none;
   counter-reset: li;
+  margin-left: 0.5em;
 }
 .fonctionnement li::before {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 3em;
+  left: 1em;
   width: 2rem;
   height: 2rem;
   margin: 1.5em 0px;
