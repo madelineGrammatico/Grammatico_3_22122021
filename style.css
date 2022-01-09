@@ -297,8 +297,17 @@ h3 {
     grid-column: 1/span 2;
   }
 }
-footer i {
-  padding-right: 1em;
+footer .list--utensils::before {
+  display: inline-block;
+  width: 2em;
+  font-family: FontAwesome;
+  content: "\f2e7";
+}
+footer .list--hands::before {
+  display: inline-block;
+  width: 2em;
+  font-family: FontAwesome;
+  content: "\f4c4";
 }
 
 .header__search {
