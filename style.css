@@ -393,8 +393,8 @@ footer i {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  left: 1em;
+  position: relative;
+  left: -1em;
   width: 2rem;
   height: 2rem;
   margin: 1.5em 0px;
