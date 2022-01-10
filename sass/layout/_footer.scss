@@ -1,5 +1,15 @@
 footer {
-     i {
-        padding-right:  1em ;
+
+    .list--utensils::before {
+        display: inline-block;
+        width: 2em;
+        font-family: FontAwesome;
+        content: "\f2e7";
+    }
+    .list--hands::before {
+        display: inline-block;
+        width: 2em;
+        font-family: FontAwesome;
+        content: "\f4c4";
     }
 }

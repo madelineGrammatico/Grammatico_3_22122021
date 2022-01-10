@@ -8,30 +8,21 @@
     
     background-color: $mediumGray;
     padding: .7rem 5rem;
-    span{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  
     label {
-        display: flex;
-        
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr;
     }
 
-    label i {
-        padding: 0rem 1rem;
-    }
-   
-     input::placeholder {
+    input::placeholder {
         opacity: 1;
-       
     }
+
     input[type=search] {
         @extend %text;
-       width: fit-content;
-        text-align: inherit;
+        width: 10em;
+        padding: 0px .5em;
         
     }
 }
