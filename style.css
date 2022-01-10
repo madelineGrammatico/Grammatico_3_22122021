@@ -123,6 +123,11 @@ h3 {
   font-family: "shrikhand", sans-sertif;
 }
 
+.restaurant__typesPlates {
+  font-weight: 300;
+  padding-top: 1em;
+}
+
 .navbar, .navbar a {
   width: 100%;
   box-shadow: 0px 0px 5px #adadad;
@@ -457,6 +462,7 @@ footer .list--hands::before {
 
 .body--menu .fa-heart {
   -webkit-text-fill-color: #f6f6f6;
+  padding-right: 0px;
 }
 
 .fonctionnement ol {
