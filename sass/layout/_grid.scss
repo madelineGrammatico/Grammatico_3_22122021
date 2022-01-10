@@ -32,9 +32,23 @@
         grid-row: 1;
     }
 }
+.restaurant__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 3em 4fr;
 
-.restaurant__form {
-    @include grid;
+    img {
+        grid-row: 1/ span 2 ;
+        grid-column: 1;
+        object-fit: cover;
+        height: 100%
+    }
+
+    .restaurant__form {
+        @include grid;
+        grid-row: 2 / span 3;
+        grid-column: 1;
+    }
 }
 
 .card--plat {
@@ -168,9 +182,7 @@
         }
     }
     .body--menu{
-        .restaurant__background {
-            aspect-ratio: 2/1;
-        }
+        
         .restaurant__form{
             grid-template-columns: 1fr 1fr 1fr;
             .restaurant__heading__wrapper,
