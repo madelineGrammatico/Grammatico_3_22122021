@@ -392,25 +392,17 @@ footer .list--hands::before {
   background-color: #eaeaea;
   padding: 0.7rem 5rem;
 }
-.header__search span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .header__search label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header__search label i {
-  padding: 0rem 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
 }
 .header__search input::placeholder {
   opacity: 1;
 }
 .header__search input[type=search] {
-  width: fit-content;
-  text-align: inherit;
+  width: 10em;
+  padding: 0px 0.5em;
 }
 
 .header__button {
