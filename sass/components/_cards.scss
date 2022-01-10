@@ -1,8 +1,9 @@
 .fonctionnement {
-
+   
     ol {
     list-style: none;
     counter-reset: li;
+    margin: 0px 1em;
     
     
     }
@@ -10,8 +11,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        left: 3em;
+        position: relative;
+        left: -1em;
         width: 2rem;
         height: 2rem;
         margin: 1.5em 0px;
@@ -47,7 +48,7 @@
         font-weight: 500;
         
         i {
-            padding: 0px 1.5em 0px 3em;
+            padding: 0px 1.5em ;
         }
     }
 }
