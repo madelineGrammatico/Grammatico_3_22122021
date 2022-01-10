@@ -463,6 +463,10 @@ footer .list--hands::before {
   color: #FF79DA;
 }
 
+.body--menu .fa-heart {
+  -webkit-text-fill-color: #f6f6f6;
+}
+
 .fonctionnement ol {
   list-style: none;
   counter-reset: li;

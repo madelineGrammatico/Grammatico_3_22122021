@@ -29,4 +29,8 @@
         color:$secondary
     }
 }
-
+.body--menu {
+    .fa-heart{
+        -webkit-text-fill-color: $lightGray;
+    }
+}
