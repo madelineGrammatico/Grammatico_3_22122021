@@ -1,9 +1,9 @@
 .fonctionnement {
-    max-width: 600px;
+   
     ol {
     list-style: none;
     counter-reset: li;
-    margin-left: .5em;
+    margin: 0px 1em;
     
     
     }
@@ -48,7 +48,7 @@
         font-weight: 500;
         
         i {
-            padding: 0px 1.5em 0px 3em;
+            padding: 0px 1.5em ;
         }
     }
 }
