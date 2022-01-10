@@ -178,6 +178,26 @@ h3 {
   font-size: 2em;
 }
 
+.restaurants {
+  display: grid;
+  grid-gap: 1.5em;
+  background-color: #f6f6f6;
+  padding: 1.5rem;
+}
+
+footer .list--utensils::before {
+  display: inline-block;
+  width: 2em;
+  font-family: FontAwesome;
+  content: "\f2e7";
+}
+footer .list--hands::before {
+  display: inline-block;
+  width: 2em;
+  font-family: FontAwesome;
+  content: "\f4c4";
+}
+
 .fonctionnement {
   display: grid;
   grid-gap: 1.5em;
@@ -276,6 +296,7 @@ h3 {
     grid-column: 1/span 2;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 4em 1fr 1fr;
+    background-color: #f6f6f6;
   }
   .restaurants h2 {
     grid-column: 1/span 2;
@@ -295,6 +316,7 @@ h3 {
   }
   .home__body .fonctionnement {
     grid-column: 1fr;
+    background-color: #eaeaea;
   }
   .home__body .fonctionnement ol {
     display: grid;
@@ -312,24 +334,12 @@ h3 {
     grid-row: 2;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 4em 1fr 1fr;
+    background-color: white;
   }
   .restaurants h2 {
     grid-column: 1/span 2;
   }
 }
-footer .list--utensils::before {
-  display: inline-block;
-  width: 2em;
-  font-family: FontAwesome;
-  content: "\f2e7";
-}
-footer .list--hands::before {
-  display: inline-block;
-  width: 2em;
-  font-family: FontAwesome;
-  content: "\f4c4";
-}
-
 .header__search {
   max-width: inherit;
   width: 100%;
@@ -544,13 +554,6 @@ footer .list--hands::before {
 }
 
 .fonctionnement {
-  padding: 1.5rem;
-}
-
-.restaurants {
-  display: grid;
-  grid-gap: 1.5em;
-  background-color: #f6f6f6;
   padding: 1.5rem;
 }
 
