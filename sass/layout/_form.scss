@@ -30,7 +30,10 @@
     border-radius: 3em 3em 0px 0px;
     padding: 1.5em ;
 
-    .restaurant__typesPlates {
-        border-bottom: 4px solid $tertiary;
+    hr{
+       border: .15em solid $tertiary;
+       width: 3em;
+       height: 0;
+       margin-top: .5em;
     }
 }

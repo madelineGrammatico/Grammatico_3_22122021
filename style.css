@@ -18,7 +18,7 @@ html {
 }
 
 html, body, nav, header, footer, div, span,
-h1, h2, h3, p,
+h1, h2, h3, p, hr,
 a, img,
 ul, ol, li,
 table, form, label, input, textarea, select, button {
@@ -110,7 +110,6 @@ h2, h3 {
 
 h2 {
   font-size: 1.3em;
-  padding-bottom: 1em;
 }
 
 h3 {
@@ -127,7 +126,7 @@ h3 {
   font-family: "shrikhand", sans-sertif;
 }
 
-.restaurant__typesPlates {
+.restaurant__typesPlates h2 {
   font-weight: 300;
   padding-top: 1em;
 }
@@ -179,8 +178,11 @@ h3 {
   border-radius: 3em 3em 0px 0px;
   padding: 1.5em;
 }
-.restaurant__form .restaurant__typesPlates {
-  border-bottom: 4px solid #99E2D0;
+.restaurant__form hr {
+  border: 0.15em solid #99E2D0;
+  width: 3em;
+  height: 0;
+  margin-top: 0.5em;
 }
 
 .restaurant__heading__wrapper {
@@ -648,6 +650,18 @@ footer .list--hands::before {
 .card--plat:nth-child(13) {
   animation: 2.8s ease-in 0s disparition, 0.5s ease-in 2.8s apparition;
 }
+.card--plat:nth-child(14) {
+  animation: 3s ease-in 0s disparition, 0.5s ease-in 3s apparition;
+}
+.card--plat:nth-child(15) {
+  animation: 3.2s ease-in 0s disparition, 0.5s ease-in 3.2s apparition;
+}
+.card--plat:nth-child(16) {
+  animation: 3.4s ease-in 0s disparition, 0.5s ease-in 3.4s apparition;
+}
+.card--plat:nth-child(17) {
+  animation: 3.6s ease-in 0s disparition, 0.5s ease-in 3.6s apparition;
+}
 .card--plat span {
   padding: 0.3em 1em;
   vertical-align: middle;
@@ -676,7 +690,7 @@ footer .list--hands::before {
 }
 .card--plat input[type=checkbox]:checked ~ .checked {
   right: inherit;
-  animation: 1s ease-out valide;
+  animation: 0.3s ease-out valide;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -688,7 +702,7 @@ footer .list--hands::before {
 .card--plat input[type=checkbox]:checked ~ .checked i {
   padding: 0px 0.5em;
   font-size: 1.5em;
-  animation: 1.5s ease-out 0s rotation;
+  animation: 0.3s ease-out rotation;
 }
 @keyframes valide {
   from {

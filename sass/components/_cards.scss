@@ -133,7 +133,7 @@
    
     input[type=checkbox]:checked ~ .checked {
         right: inherit;
-        animation: 1s ease-out valide;
+        animation: .3s ease-out valide;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -145,7 +145,7 @@
         i {
             padding: 0px .5em;
             font-size: 1.5em;
-            animation: 1.5s ease-out 0s rotation;
+            animation: .3s ease-out rotation;
         }
         
     }

@@ -11,11 +11,11 @@ body {
 h2, h3 {
     font-weight: 800;
 }
+
 h2 {
     font-size: 1.3em;
-    padding-bottom: 1em;
-   
 }
+
 h3{
     font-size: 1.2em;
     padding-bottom: .5em;
@@ -28,7 +28,7 @@ h3{
 .footer__heading {
     font-family: 'shrikhand', sans-sertif;
 }
-.restaurant__typesPlates{
+.restaurant__typesPlates h2{
     font-weight: 300;
     padding-top: 1em;
 }

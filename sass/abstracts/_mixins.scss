@@ -33,11 +33,10 @@
 }
 
 @mixin apparition {
-    @for $i from 1 through 13 {
+    @for $i from 1 through 17 {
       &:nth-child(#{$i}) { animation:
-        #{($i * .2)+.2}s ease-in 0s disparition,
-       
-         .5s ease-in #{($i * .2)+.2}s apparition;
-      }
+            #{($i * .2)+.2}s ease-in 0s disparition,
+            .5s ease-in #{($i * .2)+.2}s apparition;
+        }
     }
 }
