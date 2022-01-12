@@ -22,8 +22,6 @@
         content: counter(li);
         color: white;
         background-color: #9356DC;
-        
-        
         border-radius: 50%;
     }
 
@@ -56,9 +54,6 @@
 
 .card--restaurant {
     @include card; 
-    
-
-
     a {
         width:100%;
         
@@ -104,8 +99,11 @@
 
 .card--plat {
     position: relative;
+
     @include card;
-    animation: 1.5s ease-in 0s apparition;
+    @include apparition;
+   
+
     span{
         padding: .3em 1em;
         vertical-align: middle;

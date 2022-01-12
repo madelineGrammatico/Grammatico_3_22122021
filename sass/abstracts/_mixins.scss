@@ -31,3 +31,11 @@
     text-overflow: ellipsis;
     white-space: pre;
 }
+
+@mixin apparition {
+    @for $i from 1 through 13 {
+      &:nth-child(#{$i}) {
+        animation: 2s ease-in #{($i * .2)-.2}s apparition;
+      }
+    }
+}
