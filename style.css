@@ -311,18 +311,6 @@ footer .list--hands::before {
     grid-template-columns: 1fr 1fr 1fr;
     grid-row: 4em 1fr;
   }
-  .home__body footer {
-    grid-column: 1/span 2;
-  }
-  .home__body footer ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-auto-flow: column;
-  }
-  .home__body footer ul li {
-    display: block;
-  }
 
   .restaurants {
     display: grid;
@@ -343,6 +331,19 @@ footer .list--hands::before {
 .body--menu .restaurant__form .restaurant__typesPlates,
 .body--menu .restaurant__form .restaurant__button {
     grid-column: 1/span 2;
+  }
+
+  footer {
+    grid-column: 1/span 2;
+  }
+  footer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+  }
+  footer ul li {
+    display: block;
   }
 }
 @media only screen and (min-width:1050px) {
@@ -366,12 +367,6 @@ footer .list--hands::before {
     grid-template-columns: 0.3fr;
     grid-row: 4em 1fr;
   }
-  .home__body footer {
-    grid-column: 1/span 2;
-  }
-  .home__body footer ul {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 
   .restaurants {
     display: grid;
@@ -393,6 +388,13 @@ footer .list--hands::before {
 .body--menu .restaurant__form .restaurant__typesPlates,
 .body--menu .restaurant__form .restaurant__button {
     grid-column: 1/span 3;
+  }
+
+  footer {
+    grid-column: 1/span 2;
+  }
+  footer ul {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media only screen and (min-width:650px) {
