@@ -15,6 +15,7 @@
         left: -1em;
         width: 2rem;
         height: 2rem;
+        aspect-ratio: 1/1;
         margin: 1.5em 0px;
         text-align: center;
         direction: rtl;
@@ -48,7 +49,7 @@
         font-weight: 500;
         
         i {
-            padding: 0px 1.5em ;
+            padding-right: 1em ;
         }
     }
 }

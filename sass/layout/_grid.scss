@@ -5,6 +5,7 @@
 
     ol {
        @include grid;
+       grid-gap: 2em;
         
     } 
 }
@@ -35,7 +36,7 @@
 .restaurant__container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 3em 4fr;
+    grid-template-rows: 15em 3em 4fr;
 
     img {
         grid-row: 1/ span 2 ;
