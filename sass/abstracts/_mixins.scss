@@ -18,7 +18,7 @@
     padding: 1rem 1.5rem;
     color: white;
     font-weight: bold;
-    transition: all .8s ease-in-out;
+    transition: background .5s , box-shadow .2s ease-in-out;
 
     &:hover, &:active {
         background: linear-gradient(175deg, lighten($secondary, 5%) 15%, lighten($primary, 5%));
@@ -30,4 +30,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: pre;
+}
+
+@mixin apparition {
+    @for $i from 1 through 17 {
+      &:nth-child(#{$i}) { animation:
+            #{($i * .2)+.2}s ease-in 0s disparition,
+            .5s ease-in #{($i * .2)+.2}s apparition;
+        }
+    }
 }

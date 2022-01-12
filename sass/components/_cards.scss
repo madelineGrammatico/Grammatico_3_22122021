@@ -13,16 +13,15 @@
         align-items: center;
         position: relative;
         left: -1em;
-        width: 2rem;
-        height: 2rem;
+        width: 2em;
+        height: 2em;
+        aspect-ratio: 1/1;
         margin: 1.5em 0px;
         text-align: center;
         direction: rtl;
         content: counter(li);
         color: white;
         background-color: #9356DC;
-        
-        
         border-radius: 50%;
     }
 
@@ -48,16 +47,13 @@
         font-weight: 500;
         
         i {
-            padding: 0px 1.5em ;
+            padding-right: 1em ;
         }
     }
 }
 
 .card--restaurant {
     @include card; 
-    
-
-
     a {
         width:100%;
         
@@ -102,8 +98,10 @@
 
 
 .card--plat {
+    position: relative;
     @include card;
-    
+    @include apparition;
+
     span{
         padding: .3em 1em;
         vertical-align: middle;
@@ -127,10 +125,13 @@
     }
     
     input[type=checkbox], .checked{
+        position: relative;
         display: none;
     }
-
+   
     input[type=checkbox]:checked ~ .checked {
+        right: inherit;
+        animation: .3s ease-out valide;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -138,9 +139,24 @@
         background-color: $tertiary;
         width: 100%;
         height: 100%;
+
         i {
             padding: 0px .5em;
             font-size: 1.5em;
+            animation: .3s ease-out rotation;
         }
+        
+    }
+    @keyframes valide {
+        from { right: -5em; } to { right: 0em; }
+    }
+    @keyframes rotation {
+        from { transform: rotate(360deg); } to { transform: rotate(0deg); }
+    }
+    @keyframes disparition {
+        from { opacity: 0; } to { opacity:0 }
+    }
+    @keyframes apparition {
+        from { bottom: -1em; opacity: 0; } to { opacity:1; bottom: 0em; }
     }
 }
