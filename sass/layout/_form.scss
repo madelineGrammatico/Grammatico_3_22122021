@@ -6,13 +6,13 @@
     align-items: center;
     gap: 1.5em;
     background-color:  #f6f6f6;
-    padding-bottom: 3rem;
+    padding-bottom: 3em;
 
     .header__title {
         @extend %text;
         width: 100%;
         
-        font-size: 1.3rem;
+        font-size: 1.3em;
         font-weight: 900;
     }
     
