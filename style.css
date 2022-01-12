@@ -96,6 +96,10 @@ iframe {
   height: 100%;
 }
 
+body {
+  font-size: 4vw;
+}
+
 * {
   font-family: "roboto", sans-serif;
 }
@@ -387,6 +391,16 @@ footer .list--hands::before {
 .body--menu .restaurant__form .restaurant__typesPlates,
 .body--menu .restaurant__form .restaurant__button {
     grid-column: 1/span 3;
+  }
+}
+@media only screen and (min-width:650px) {
+  body {
+    font-size: 2.3vw;
+  }
+}
+@media only screen and (min-width:1050px) {
+  body {
+    font-size: 1.4vw;
   }
 }
 .header__search {
