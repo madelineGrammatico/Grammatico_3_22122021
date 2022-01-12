@@ -155,6 +155,9 @@
     @keyframes rotation {
         from { transform: rotate(360deg); } to { transform: rotate(0deg); }
     }
+    @keyframes disparition {
+        from { opacity: 0; } to { opacity:0 }
+    }
     @keyframes apparition {
         from { bottom: -1em; opacity: 0; } to { opacity:1; bottom: 0em; }
     }
