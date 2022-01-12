@@ -437,7 +437,7 @@ footer .list--hands::before {
   padding: 1rem 1.5rem;
   color: white;
   font-weight: bold;
-  transition: all 0.8s ease-in-out;
+  transition: background 0.5s, box-shadow 0.2s ease-in-out;
 }
 .header__button:hover, .header__button:active {
   background: linear-gradient(175deg, #ff93e1 15%, #a16be0);
@@ -452,7 +452,7 @@ footer .list--hands::before {
   padding: 1rem 1.5rem;
   color: white;
   font-weight: bold;
-  transition: all 0.8s ease-in-out;
+  transition: background 0.5s, box-shadow 0.2s ease-in-out;
   margin: 3em auto;
 }
 .restaurant__button:hover, .restaurant__button:active {

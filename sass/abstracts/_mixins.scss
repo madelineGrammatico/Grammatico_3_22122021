@@ -18,7 +18,7 @@
     padding: 1rem 1.5rem;
     color: white;
     font-weight: bold;
-    transition: all .8s ease-in-out;
+    transition: background .5s , box-shadow .2s ease-in-out;
 
     &:hover, &:active {
         background: linear-gradient(175deg, lighten($secondary, 5%) 15%, lighten($primary, 5%));
