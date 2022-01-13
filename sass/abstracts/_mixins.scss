@@ -9,6 +9,11 @@
     display: grid;
     grid-gap: 1.5em;
 }
+@mixin flexCenterCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @mixin btn {
     width: fit-content;
@@ -55,4 +60,7 @@
 
 @mixin spinner($name) {
     animation: 1s ease-out 0s $name;
+}
+@mixin checked($name) {
+    animation: .3s ease-out 0s $name;
 }

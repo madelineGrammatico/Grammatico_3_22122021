@@ -584,8 +584,6 @@ footer .list--hands::before {
 .card--restaurant figure {
   width: 100%;
   margin: inherit;
-  object-fit: cover;
-  overflow: hidden;
 }
 .card--restaurant img {
   aspect-ratio: 1/0.5;
@@ -699,11 +697,11 @@ footer .list--hands::before {
   display: none;
 }
 .card--plat input[type=checkbox]:checked ~ .checked {
-  right: inherit;
-  animation: 0.3s ease-out valide;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: 0.3s ease-out 0s valide;
+  right: inherit;
   color: white;
   background-color: #99E2D0;
   width: 100%;
@@ -712,7 +710,7 @@ footer .list--hands::before {
 .card--plat input[type=checkbox]:checked ~ .checked i {
   padding: 0 0.5em;
   font-size: 1.5em;
-  animation: 0.3s ease-out rotation;
+  animation: 0.3s ease-out 0s rotation;
 }
 @keyframes valide {
   from {
