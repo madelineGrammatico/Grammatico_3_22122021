@@ -193,8 +193,12 @@
     }
     footer {
         grid-column: 1/ span 2;
+        h2, ul{
+            width: 50%;
+            margin: auto;
+        }
         ul {
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns:  1fr 1fr ;
         }
     }
 }
