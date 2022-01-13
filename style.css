@@ -206,6 +206,7 @@ h3 {
   grid-gap: 1.5em;
   background-color: #f6f6f6;
   padding: 1.5rem;
+  padding-bottom: 4em;
 }
 
 footer .list--utensils::before {
