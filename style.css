@@ -497,20 +497,20 @@ footer .list--hands::before {
 }
 .button--heart .fa-heart {
   font-size: 1.5em;
-  -webkit-text-fill-color: white;
+  color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  transition: -webkit-text-fill-color 1s ease-in-out;
+  transition: color 0.5s ease-in-out;
   padding: 1.5em;
+  pointer-events: inherit;
 }
-.button--heart .fa-heart:active {
-  -webkit-text-fill-color: #FF79DA;
-  -webkit-text-stroke-color: inherit;
+.button--heart .fa-heart:hover {
   color: #FF79DA;
+  -webkit-text-stroke-color: #FF79DA;
 }
 
 .body--menu .fa-heart {
-  -webkit-text-fill-color: #f6f6f6;
+  color: #f6f6f6;
   padding-right: 0px;
   font-size: 2.5em;
 }
