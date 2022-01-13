@@ -3,7 +3,7 @@
     ol {
     list-style: none;
     counter-reset: li;
-    margin: 0px 1em;
+    margin: 0 1em;
     
     
     }
@@ -16,7 +16,7 @@
         width: 2em;
         height: 2em;
         aspect-ratio: 1/1;
-        margin: 1.5em 0px;
+        margin: 1.5em 0;
         text-align: center;
         direction: rtl;
         content: counter(li);
@@ -75,7 +75,7 @@
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
-        padding: 0px 1.5em;
+        padding: 0 1.5em;
 
         p{
             color: $darkGray;
@@ -143,7 +143,7 @@
         height: 100%;
 
         i {
-            padding: 0px .5em;
+            padding: 0 .5em;
             font-size: 1.5em;
             animation: .3s ease-out rotation;
         }
