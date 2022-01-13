@@ -103,7 +103,6 @@
     @include card;
     @include apparition;
    
-
     span{
         padding: .3em 1em;
         vertical-align: middle;
@@ -121,7 +120,7 @@
         display: inline;
         padding-bottom: 1em;
     }
-
+    
     .price {
         text-align: end;
     }

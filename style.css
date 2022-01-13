@@ -419,7 +419,7 @@ footer .list--hands::before {
   left: 0;
   z-index: 999;
   visibility: hidden;
-  animation: 2s ease-out 0s modal;
+  animation: 1s ease-out 0s modal;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -427,7 +427,7 @@ footer .list--hands::before {
 .modal-window i {
   color: #9356DC;
   font-size: 10em;
-  animation: 2s ease-out 0s rotation;
+  animation: 1s ease-out 0s rotation;
 }
 
 @keyframes modal {
