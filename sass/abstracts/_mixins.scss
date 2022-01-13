@@ -1,6 +1,6 @@
 @mixin card {
     background-color: white;
-    box-shadow: 0px 3px 6px #aaaaaa;
+    box-shadow: 0 3px 6px #aaaaaa;
     border-radius: 1em;
     overflow: hidden;
 }
@@ -9,20 +9,37 @@
     display: grid;
     grid-gap: 1.5em;
 }
+@mixin flexCenterCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @mixin btn {
     width: fit-content;
     border-radius: 5rem;
     background: linear-gradient(175deg, $secondary 15%, $primary);
-    box-shadow: 0px 7px 7px #c0c0c0;
+    box-shadow: 0 7px 7px #c0c0c0;
     padding: 1rem 1.5rem;
     color: white;
     font-weight: bold;
-    transition: all .8s ease-in-out;
+    transition: background .5s , box-shadow .2s ease-in-out;
 
     &:hover, &:active {
         background: linear-gradient(175deg, lighten($secondary, 5%) 15%, lighten($primary, 5%));
-        box-shadow: 0px 7px 7px #929292;
+        box-shadow: 0 7px 7px #929292;
+    }
+}
+
+@mixin heart {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    transition: color .5s ease-in-out;
+    padding: 1.5em;
+
+    &:hover{
+        color: $secondary;
+        -webkit-text-stroke-color: $secondary; 
     }
 }
 
@@ -30,4 +47,26 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: pre;
+}
+
+@mixin apparition {
+    @for $i from 1 through 17 {
+      &:nth-child(#{$i}) { animation:
+            #{($i * .2)+.2}s ease-in 0s disparition,
+            .5s ease-in #{($i * .2)+.2}s apparition;
+        }
+    }
+}
+
+@mixin spinner($name) {
+    animation: 1s ease-out 0s $name;
+}
+@mixin checked($name) {
+    animation: .3s ease-out 0s $name;
+}
+
+@mixin listIcone {
+    display: inline-block;
+    width: 2em;
+    font-family: FontAwesome;
 }

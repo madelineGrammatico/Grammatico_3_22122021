@@ -14,24 +14,18 @@
     width: fit-content;
     align-self: flex-end;
     justify-self: end;
-    .fa-heart {
-        font-size: 1.5rem;
-        -webkit-text-fill-color: white;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: rgb(0, 0, 0);
-        transition : -webkit-text-fill-color 1s ease-in-out;
-        padding: 1.5em;
-    }
     
-    .fa-heart:active{
-        -webkit-text-fill-color: $secondary;
-        -webkit-text-stroke-color: inherit;
-        color:$secondary
+    .fa-heart {
+        font-size: 1.5em;
+        color: white;
+        @include heart;
     }
 }
+
 .body--menu {
     .fa-heart{
-        -webkit-text-fill-color: $lightGray;
-        padding-right: 0px;
+        color: $lightGray;
+        padding-right: 0;
+        font-size: 2.5em;
     }
 }

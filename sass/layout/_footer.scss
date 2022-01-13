@@ -1,15 +1,17 @@
 footer {
 
     .list--utensils::before {
-        display: inline-block;
-        width: 2em;
-        font-family: FontAwesome;
+        @include listIcone;
         content: "\f2e7";
     }
+
     .list--hands::before {
-        display: inline-block;
-        width: 2em;
-        font-family: FontAwesome;
+        @include listIcone;
         content: "\f4c4";
     }
+
+    background-color: $darkGray;
+    color: white;
+    padding: 1.5rem;
+    font-family: roboto, sans-serif;
 }
