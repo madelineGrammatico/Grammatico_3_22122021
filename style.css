@@ -133,7 +133,7 @@ h3 {
 
 .navbar, .navbar a {
   width: 100%;
-  box-shadow: 0px 0px 5px #adadad;
+  box-shadow: 0 0 5px #adadad;
 }
 .navbar a {
   display: flex;
@@ -175,7 +175,7 @@ h3 {
 
 .restaurant__form {
   background-color: #f6f6f6;
-  border-radius: 3em 3em 0px 0px;
+  border-radius: 3em 3em 0 0;
   padding: 1.5em;
 }
 .restaurant__form hr {
@@ -206,8 +206,15 @@ h3 {
   grid-gap: 1.5em;
   background-color: #f6f6f6;
   padding: 1.5rem;
+  padding-bottom: 4em;
 }
 
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 1.5rem;
+  font-family: roboto, sans-serif;
+}
 footer .list--utensils::before {
   display: inline-block;
   width: 2em;
@@ -278,7 +285,7 @@ footer .list--hands::before {
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "title title checked" "sub-title price checked";
-  grid-gap: 0px;
+  grid-gap: 0;
 }
 .card--plat .title {
   grid-area: title;
@@ -298,7 +305,7 @@ footer .list--hands::before {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 0.7fr 0.6fr 2fr 0.5fr;
-    grid-gap: 0px;
+    grid-gap: 0;
   }
   .home__body header {
     grid-row: 1;
@@ -354,7 +361,7 @@ footer .list--hands::before {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 0.5fr 2fr 0.5fr;
-    grid-gap: 0px;
+    grid-gap: 0;
   }
   .home__body header {
     grid-row: 1;
@@ -395,8 +402,12 @@ footer .list--hands::before {
   footer {
     grid-column: 1/span 2;
   }
+  footer h2, footer ul {
+    width: 50%;
+    margin: auto;
+  }
   footer ul {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 .modal-window {
@@ -408,7 +419,7 @@ footer .list--hands::before {
   left: 0;
   z-index: 999;
   visibility: hidden;
-  animation: 2s ease-out 0s modal;
+  animation: 1s ease-out 0s modal;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -416,7 +427,7 @@ footer .list--hands::before {
 .modal-window i {
   color: #9356DC;
   font-size: 10em;
-  animation: 2s ease-out 0s rotation;
+  animation: 1s ease-out 0s rotation;
 }
 
 @keyframes modal {
@@ -456,14 +467,14 @@ footer .list--hands::before {
 }
 .header__search input[type=search] {
   width: 10em;
-  padding: 0px 0.5em;
+  padding: 0 0.5em;
 }
 
 .header__button {
   width: fit-content;
   border-radius: 5rem;
   background: linear-gradient(175deg, #FF79DA 15%, #9356DC);
-  box-shadow: 0px 7px 7px #c0c0c0;
+  box-shadow: 0 7px 7px #c0c0c0;
   padding: 1rem 1.5rem;
   color: white;
   font-weight: bold;
@@ -471,14 +482,14 @@ footer .list--hands::before {
 }
 .header__button:hover, .header__button:active {
   background: linear-gradient(175deg, #ff93e1 15%, #a16be0);
-  box-shadow: 0px 7px 7px #929292;
+  box-shadow: 0 7px 7px #929292;
 }
 
 .restaurant__button {
   width: fit-content;
   border-radius: 5rem;
   background: linear-gradient(175deg, #FF79DA 15%, #9356DC);
-  box-shadow: 0px 7px 7px #c0c0c0;
+  box-shadow: 0 7px 7px #c0c0c0;
   padding: 1rem 1.5rem;
   color: white;
   font-weight: bold;
@@ -487,7 +498,7 @@ footer .list--hands::before {
 }
 .restaurant__button:hover, .restaurant__button:active {
   background: linear-gradient(175deg, #ff93e1 15%, #a16be0);
-  box-shadow: 0px 7px 7px #929292;
+  box-shadow: 0 7px 7px #929292;
 }
 
 .button--heart {
@@ -497,28 +508,27 @@ footer .list--hands::before {
 }
 .button--heart .fa-heart {
   font-size: 1.5em;
-  -webkit-text-fill-color: white;
+  color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  transition: -webkit-text-fill-color 1s ease-in-out;
+  transition: color 0.5s ease-in-out;
   padding: 1.5em;
 }
-.button--heart .fa-heart:active {
-  -webkit-text-fill-color: #FF79DA;
-  -webkit-text-stroke-color: inherit;
+.button--heart .fa-heart:hover {
   color: #FF79DA;
+  -webkit-text-stroke-color: #FF79DA;
 }
 
 .body--menu .fa-heart {
-  -webkit-text-fill-color: #f6f6f6;
-  padding-right: 0px;
+  color: #f6f6f6;
+  padding-right: 0;
   font-size: 2.5em;
 }
 
 .fonctionnement ol {
   list-style: none;
   counter-reset: li;
-  margin: 0px 1em;
+  margin: 0 1em;
 }
 .fonctionnement li::before {
   display: flex;
@@ -529,7 +539,7 @@ footer .list--hands::before {
   width: 2em;
   height: 2em;
   aspect-ratio: 1/1;
-  margin: 1.5em 0px;
+  margin: 1.5em 0;
   text-align: center;
   direction: rtl;
   content: counter(li);
@@ -543,7 +553,7 @@ footer .list--hands::before {
 
 .card--fonctionnement {
   background-color: white;
-  box-shadow: 0px 3px 6px #aaaaaa;
+  box-shadow: 0 3px 6px #aaaaaa;
   border-radius: 1em;
   overflow: hidden;
   overflow: inherit;
@@ -565,7 +575,7 @@ footer .list--hands::before {
 
 .card--restaurant {
   background-color: white;
-  box-shadow: 0px 3px 6px #aaaaaa;
+  box-shadow: 0 3px 6px #aaaaaa;
   border-radius: 1em;
   overflow: hidden;
 }
@@ -575,8 +585,6 @@ footer .list--hands::before {
 .card--restaurant figure {
   width: 100%;
   margin: inherit;
-  object-fit: cover;
-  overflow: hidden;
 }
 .card--restaurant img {
   aspect-ratio: 1/0.5;
@@ -587,7 +595,7 @@ footer .list--hands::before {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  padding: 0px 1.5em;
+  padding: 0 1.5em;
 }
 .card--restaurant figcaption p {
   color: #353535;
@@ -608,7 +616,7 @@ footer .list--hands::before {
 .card--plat {
   position: relative;
   background-color: white;
-  box-shadow: 0px 3px 6px #aaaaaa;
+  box-shadow: 0 3px 6px #aaaaaa;
   border-radius: 1em;
   overflow: hidden;
 }
@@ -690,20 +698,20 @@ footer .list--hands::before {
   display: none;
 }
 .card--plat input[type=checkbox]:checked ~ .checked {
-  right: inherit;
-  animation: 0.3s ease-out valide;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: 0.3s ease-out 0s valide;
+  right: inherit;
   color: white;
   background-color: #99E2D0;
   width: 100%;
   height: 100%;
 }
 .card--plat input[type=checkbox]:checked ~ .checked i {
-  padding: 0px 0.5em;
+  padding: 0 0.5em;
   font-size: 1.5em;
-  animation: 0.3s ease-out rotation;
+  animation: 0.3s ease-out 0s rotation;
 }
 @keyframes valide {
   from {
@@ -742,12 +750,7 @@ footer .list--hands::before {
 
 .fonctionnement {
   padding: 1.5rem;
-}
-
-footer {
-  background-color: #353535;
-  color: white;
-  padding: 1.5rem;
+  padding-bottom: 4em;
 }
 
 /*# sourceMappingURL=style.css.map */

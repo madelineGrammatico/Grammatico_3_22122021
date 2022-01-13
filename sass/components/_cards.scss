@@ -3,20 +3,18 @@
     ol {
     list-style: none;
     counter-reset: li;
-    margin: 0px 1em;
+    margin: 0 1em;
     
     
     }
     li::before {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexCenterCenter;
         position: relative;
         left: -1em;
         width: 2em;
         height: 2em;
         aspect-ratio: 1/1;
-        margin: 1.5em 0px;
+        margin: 1.5em 0;
         text-align: center;
         direction: rtl;
         content: counter(li);
@@ -61,8 +59,6 @@
     figure {
         width: 100%;
         margin: inherit;
-        object-fit: cover;
-        overflow: hidden;
     }
 
     img {
@@ -75,7 +71,7 @@
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
-        padding: 0px 1.5em;
+        padding: 0 1.5em;
 
         p{
             color: $darkGray;
@@ -101,7 +97,6 @@
     position: relative;
     @include card;
     @include apparition;
-
     span{
         padding: .3em 1em;
         vertical-align: middle;
@@ -119,7 +114,7 @@
         display: inline;
         padding-bottom: 1em;
     }
-
+    
     .price {
         text-align: end;
     }
@@ -130,20 +125,19 @@
     }
    
     input[type=checkbox]:checked ~ .checked {
+        @include flexCenterCenter;
+        @include checked(valide);
+        
         right: inherit;
-        animation: .3s ease-out valide;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         color: white;
         background-color: $tertiary;
         width: 100%;
         height: 100%;
 
         i {
-            padding: 0px .5em;
+            padding: 0 .5em;
             font-size: 1.5em;
-            animation: .3s ease-out rotation;
+            @include checked(rotation);
         }
         
     }
