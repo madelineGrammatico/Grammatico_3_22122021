@@ -513,7 +513,6 @@ footer .list--hands::before {
   -webkit-text-stroke-color: black;
   transition: color 0.5s ease-in-out;
   padding: 1.5em;
-  pointer-events: inherit;
 }
 .button--heart .fa-heart:hover {
   color: #FF79DA;
