@@ -1,16 +1,12 @@
 footer {
 
     .list--utensils::before {
-        display: inline-block;
-        width: 2em;
-        font-family: FontAwesome;
+        @include listIcone;
         content: "\f2e7";
     }
 
     .list--hands::before {
-        display: inline-block;
-        width: 2em;
-        font-family: FontAwesome;
+        @include listIcone;
         content: "\f4c4";
     }
 

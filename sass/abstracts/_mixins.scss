@@ -64,3 +64,9 @@
 @mixin checked($name) {
     animation: .3s ease-out 0s $name;
 }
+
+@mixin listIcone {
+    display: inline-block;
+    width: 2em;
+    font-family: FontAwesome;
+}

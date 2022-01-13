@@ -4,9 +4,7 @@
     box-shadow: 0 0 5px #adadad;
     a {
         @extend .navbar;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexCenterCenter;
         background-color: white;
 
     }
