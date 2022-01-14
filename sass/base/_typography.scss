@@ -1,11 +1,18 @@
 body {
-    font-size: 4vw;
+    font-size: 16px;
 }
 
 
 
 * {
     font-family: 'roboto', sans-serif;
+}
+.header__title {
+    @extend %text;
+    width: 70%;
+    
+    font-size: 1.9em;
+    font-weight: 800;
 }
 
 h2, h3 {
@@ -16,14 +23,21 @@ h2 {
     font-size: 1.3em;
 }
 
+
 h3{
     font-size: 1.2em;
     padding-bottom: .5em;
 }
+.header__subtitle, p  {
+    @extend %text;
+    max-width: 87%;
+    font-size: 1.3em;
+    font-weight: 300;
+}
 
 .logo, .restaurant__heading {
     font-family: 'shrikhand', sans-sertif;
-    font-size: 2em;
+    font-size: 2.2em;
 }
 .footer__heading {
     font-family: 'shrikhand', sans-sertif;
@@ -31,4 +45,21 @@ h3{
 .restaurant__typesPlates h2{
     font-weight: 300;
     padding-top: 1em;
+}
+.header__search {
+    color: $darkGray;
+
+    input[type=search] {
+        font-size: 1.3em;
+        font-weight:600;
+        
+    }
+
+    label .fa-map-marker-alt {
+        font-size: 1.2em;
+    }
+}
+.header__button {
+    font-size: 1.3em;
+    font-weight: 300;
 }

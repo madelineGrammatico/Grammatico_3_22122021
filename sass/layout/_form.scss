@@ -1,27 +1,17 @@
 .header__form {
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 1.5em;
+    gap: 1em;
     background-color:  #f6f6f6;
-    padding-bottom: 3em;
+    padding-bottom: 4em;
 
-    .header__title {
-        @extend %text;
-        width: 100%;
-        
-        font-size: 1.3em;
-        font-weight: 900;
+
+    button{
+        margin-top: 1em;
     }
     
-    .header__subtitle {
-        @extend %text;
-        max-width: 75%;
-    
-        font-weight: 300;
-    }
    
 }
 

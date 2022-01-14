@@ -1,11 +1,16 @@
 .navbar {
-
-    width: 100%;
-    box-shadow: 0 0 5px #adadad;
+        width: 100%;
+        position: relative;
+        box-shadow: 0 .05em .4em #adadad;
+        z-index: 9;
     a {
-        @extend .navbar;
+        
+
+       
         @include flexCenterCenter;
         background-color: white;
+        padding-top: .5em;
+        padding-bottom: .2em;
 
     }
 }

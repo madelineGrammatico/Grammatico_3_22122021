@@ -1,7 +1,7 @@
 .header__button {
     @extend %text;
     @include btn;
-
+    padding: 1em 1.5em;
 }
 
 .restaurant__button {
