@@ -23,15 +23,19 @@ h2 {
 
 
 h3{
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 800;
-    padding-bottom: .5em;
 }
-.header__subtitle, p  {
+.header__subtitle {
     @extend %text;
     max-width: 87%;
     font-size: 1.3em;
     font-weight: 300;
+}
+p {
+   font-size: 1.3em;
+   font-weight: 400;
+   color: $darkGray;
 }
 
 .logo, .restaurant__heading {
@@ -40,6 +44,7 @@ h3{
 }
 .footer__heading {
     font-family: 'shrikhand', sans-sertif;
+    font-size: 1.2em;
 }
 .restaurant__typesPlates h2{
     font-weight: 300;
@@ -76,4 +81,10 @@ h3{
        background-color: $lightPurple;
        i {color: $primary}
    }
+}
+footer {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: roboto, sans-serif;
 }

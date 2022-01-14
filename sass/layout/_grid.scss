@@ -78,6 +78,18 @@
         grid-area: checked;
     }
 }
+footer {
+    grid-column: 1/ span 2;
+    ul {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: .5em;
+        li {
+            display: block;
+           
+        }
+    }
+}
 
 @media #{$medium-up} {
     .home__body {
@@ -128,17 +140,10 @@
         
     }
     footer {
-        grid-column: 1/ span 2;
         ul {
-            display: grid;
             grid-template-columns: 1fr 1fr ;
             grid-template-rows: 1fr 1fr;
             grid-auto-flow: column;
-           
-            li {
-                display: block;
-               
-            }
         }
     }
 }
@@ -192,7 +197,6 @@
 
     }
     footer {
-        grid-column: 1/ span 2;
         h2, ul{
             width: 50%;
             margin: auto;

@@ -1,6 +1,10 @@
 .restaurants {
     @include grid;
+    grid-template-rows: 4.5em 1fr;
     background-color: $lightGray;
     padding: 1.4em;
-    padding-bottom: 4em;
+    padding-bottom: 4.5em;
+    .restaurants__card__subtitle {
+        text-align: start;
+    }
 }
