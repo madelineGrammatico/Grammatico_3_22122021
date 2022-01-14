@@ -105,21 +105,20 @@ body {
 }
 
 .header__title {
-  width: 70%;
-  font-size: 1.9em;
-  font-weight: 800;
-}
-
-h2, h3 {
+  width: 75%;
+  font-size: 2em;
   font-weight: 800;
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 2em;
+  font-weight: 800;
+  align-self: flex-end;
 }
 
 h3 {
   font-size: 1.2em;
+  font-weight: 800;
   padding-bottom: 0.5em;
 }
 
@@ -156,7 +155,23 @@ h3 {
 
 .header__button {
   font-size: 1.3em;
-  font-weight: 300;
+}
+
+.card--fonctionnement {
+  font-size: 1.3em;
+  font-weight: 550;
+}
+.card--fonctionnement .fonctionnement__card__text {
+  color: black;
+}
+.card--fonctionnement i {
+  color: #353535;
+}
+.card--fonctionnement:hover {
+  background-color: #f5edff;
+}
+.card--fonctionnement:hover i {
+  color: #9356DC;
 }
 
 .navbar {
@@ -231,7 +246,7 @@ h3 {
   display: grid;
   grid-gap: 1.5em;
   background-color: #f6f6f6;
-  padding: 1.5rem;
+  padding: 1.4em;
   padding-bottom: 4em;
 }
 
@@ -257,7 +272,7 @@ footer .list--hands::before {
 .fonctionnement {
   display: grid;
   grid-gap: 1.5em;
-  grid-template-rows: 4em 0.5fr;
+  grid-template-rows: 4.5em 0.5fr;
 }
 .fonctionnement ol {
   display: grid;
@@ -352,7 +367,7 @@ footer .list--hands::before {
     grid-gap: 1.5em;
     grid-column: 1/span 2;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 4em 1fr 1fr;
+    grid-template-rows: 4.5em 1fr 1fr;
     background-color: #f6f6f6;
   }
   .restaurants h2 {
@@ -546,7 +561,7 @@ footer .list--hands::before {
 .fonctionnement ol {
   list-style: none;
   counter-reset: li;
-  margin: 0 1em;
+  margin-left: 1em;
 }
 .fonctionnement li::before {
   display: flex;
@@ -564,6 +579,7 @@ footer .list--hands::before {
   color: white;
   background-color: #9356DC;
   border-radius: 50%;
+  font-size: 0.8em;
 }
 .fonctionnement li {
   counter-increment: li;
@@ -575,16 +591,12 @@ footer .list--hands::before {
   border-radius: 1em;
   overflow: hidden;
   overflow: inherit;
-  height: 5em;
+  height: 4em;
   display: flex;
   align-items: center;
   border-radius: 1.5em;
   vertical-align: middle;
   background-color: #f6f6f6;
-}
-.card--fonctionnement span {
-  color: black;
-  font-weight: 500;
 }
 .card--fonctionnement span i {
   padding-right: 1em;
@@ -766,8 +778,8 @@ footer .list--hands::before {
 }
 
 .fonctionnement {
-  padding: 1.5rem;
-  padding-bottom: 4em;
+  padding: 1.4em;
+  padding-bottom: 4.5em;
 }
 
 /*# sourceMappingURL=style.css.map */

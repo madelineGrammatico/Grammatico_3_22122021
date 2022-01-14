@@ -1,6 +1,6 @@
 .fonctionnement {
     @include grid;
-    grid-template-rows: 4em .5fr;
+    grid-template-rows: 4.5em .5fr;
         
 
     ol {
@@ -109,7 +109,7 @@
         @include grid;
         grid-column: 1/ span 2;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 4em 1fr 1fr;
+        grid-template-rows: 4.5em 1fr 1fr;
         background-color: $lightGray;
         h2 {
             grid-column: 1 / span 2;

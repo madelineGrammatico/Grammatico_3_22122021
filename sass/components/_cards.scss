@@ -3,7 +3,7 @@
     ol {
     list-style: none;
     counter-reset: li;
-    margin: 0 1em;
+    margin-left: 1em ;
     
     
     }
@@ -21,6 +21,7 @@
         color: white;
         background-color: #9356DC;
         border-radius: 50%;
+        font-size: .8em;
     }
 
     li {
@@ -32,7 +33,7 @@
     @include card;
     overflow: inherit;
 
-    height: 5em;
+    height: 4em;
 
     display: flex;
     align-items: center;
@@ -41,9 +42,6 @@
     background-color: $lightGray;
 
     span {
-        color: black;
-        font-weight: 500;
-        
         i {
             padding-right: 1em ;
         }

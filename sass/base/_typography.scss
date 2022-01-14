@@ -9,23 +9,22 @@ body {
 }
 .header__title {
     @extend %text;
-    width: 70%;
+    width: 75%;
     
-    font-size: 1.9em;
-    font-weight: 800;
-}
-
-h2, h3 {
+    font-size: 2em;
     font-weight: 800;
 }
 
 h2 {
-    font-size: 1.3em;
+    font-size: 2em;
+    font-weight: 800;
+    align-self: flex-end;
 }
 
 
 h3{
     font-size: 1.2em;
+    font-weight: 800;
     padding-bottom: .5em;
 }
 .header__subtitle, p  {
@@ -61,5 +60,20 @@ h3{
 }
 .header__button {
     font-size: 1.3em;
-    font-weight: 300;
+   
+}
+.card--fonctionnement {
+    font-size: 1.3em;
+    font-weight: 550;
+   .fonctionnement__card__text {
+       color: black;
+   }
+   i{
+       color: $darkGray;
+
+   }
+   &:hover {
+       background-color: $lightPurple;
+       i {color: $primary}
+   }
 }
