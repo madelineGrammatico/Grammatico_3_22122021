@@ -110,8 +110,12 @@ body {
   font-weight: 800;
 }
 
-h2 {
+.restaurant__heading__wrapper .restaurant__heading {
   font-size: 2em;
+  font-weight: 800;
+}
+
+.body--menu ~ h2 {
   font-weight: 800;
   align-self: flex-end;
 }
@@ -144,8 +148,10 @@ p {
 }
 
 .restaurant__typesPlates h2 {
-  font-weight: 300;
+  font-size: 1.3em;
+  font-weight: 400;
   padding-top: 1em;
+  color: #353535;
 }
 
 .header__search {
@@ -229,7 +235,7 @@ footer {
 
 .restaurant__form {
   background-color: #f6f6f6;
-  border-radius: 3em 3em 0 0;
+  border-radius: 2.5em 2.5em 0 0;
   padding: 1.5em;
 }
 .restaurant__form hr {
@@ -243,7 +249,7 @@ footer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 .restaurant__heading__wrapper .restaurant__heading {
   display: block;
@@ -323,7 +329,7 @@ footer .list--hands::before {
 .restaurant__container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 15em 3em 4fr;
+  grid-template-rows: 15em 1em 4fr;
 }
 .restaurant__container img {
   grid-row: 1/span 2;
@@ -336,6 +342,7 @@ footer .list--hands::before {
   grid-gap: 1.5em;
   grid-row: 2/span 3;
   grid-column: 1;
+  grid-template-rows: 4em;
 }
 
 .card--plat {
@@ -548,6 +555,7 @@ footer ul li {
   font-weight: 450;
   transition: background 0.5s, box-shadow 0.2s ease-in-out;
   margin: 3em auto;
+  padding: 1em 3em;
 }
 .restaurant__button:hover, .restaurant__button:active {
   background: linear-gradient(175deg, #ff93e1 15%, #a16be0);
@@ -556,13 +564,11 @@ footer ul li {
 
 .button--heart {
   width: fit-content;
-  align-self: flex-end;
-  justify-self: end;
 }
 .button--heart .fa-heart {
   font-size: 1.5em;
   color: white;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
   transition: color 0.5s ease-in-out;
   padding: 1.5em;
@@ -572,10 +578,15 @@ footer ul li {
   -webkit-text-stroke-color: #FF79DA;
 }
 
+.home__body .button--heart {
+  justify-self: end;
+  align-self: flex-end;
+}
+
 .body--menu .fa-heart {
   color: #f6f6f6;
-  padding-right: 0;
-  font-size: 2.5em;
+  padding: 0;
+  font-size: 1.8em;
 }
 
 .fonctionnement ol {
@@ -737,6 +748,7 @@ footer ul li {
 }
 .card--plat .price {
   text-align: end;
+  font-weight: 800;
 }
 .card--plat input[type=checkbox], .card--plat .checked {
   position: relative;

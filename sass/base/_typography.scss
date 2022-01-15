@@ -14,9 +14,15 @@ body {
     font-size: 2em;
     font-weight: 800;
 }
+.restaurant__heading__wrapper {
+    .restaurant__heading {
+        font-size: 2em;
+        font-weight: 800;
+    }
+}
 
-h2 {
-    font-size: 2em;
+.body--menu ~ h2 {
+   
     font-weight: 800;
     align-self: flex-end;
 }
@@ -47,8 +53,10 @@ p {
     font-size: 1.2em;
 }
 .restaurant__typesPlates h2{
-    font-weight: 300;
+    font-size: 1.3em;
+    font-weight: 400;
     padding-top: 1em;
+    color: $darkGray;
 }
 .header__search {
     color: $darkGray;
