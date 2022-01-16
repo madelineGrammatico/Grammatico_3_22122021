@@ -316,7 +316,7 @@ footer .list--hands::before {
 .card--restaurant figure {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 0.2fr 1fr 0.6fr;
+  grid-template-rows: 0.2fr 1.2fr 0.6fr;
 }
 .card--restaurant img {
   grid-column: 1;
@@ -419,6 +419,18 @@ footer ul li {
   .restaurants h2 {
     grid-column: 1/span 2;
   }
+  .restaurants .card--restaurant figure {
+    grid-template-rows: 0.2fr 1.4fr 0.4fr;
+  }
+  .restaurants .card--restaurant figure img {
+    aspect-ratio: 1/0.85;
+  }
+  .restaurants .card--restaurant figure figcaption {
+    position: relative;
+    display: block;
+    align-self: center;
+    background-color: hotpink;
+  }
 
   .body--menu .restaurant__form {
     grid-template-columns: 1fr 1fr;
@@ -468,6 +480,9 @@ footer ul li {
   }
   .restaurants h2 {
     grid-column: 1/span 2;
+  }
+  .restaurants .card--restaurant figure img {
+    aspect-ratio: 1/0.75;
   }
 
   .body--menu .restaurant__form {

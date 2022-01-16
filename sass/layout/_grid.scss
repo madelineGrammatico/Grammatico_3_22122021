@@ -14,7 +14,7 @@
     figure {
         display: grid;
         grid-template-columns: 3fr 1fr;
-        grid-template-rows: .2fr 1fr .6fr;
+        grid-template-rows: .2fr 1.2fr .6fr;
     }
     img {
         grid-column: 1;
@@ -127,6 +127,22 @@ footer {
         h2 {
             grid-column: 1 / span 2;
         }
+        .card--restaurant {
+            figure {
+                grid-template-rows: .2fr 1.4fr .4fr;
+
+                img {
+                    aspect-ratio: 1/0.85;
+                }
+                figcaption {
+                    position: relative;
+                    display: block;
+                    align-self: center;
+                    background-color: hotpink;
+                }
+            } 
+            
+        }
     }
 
     .body--menu{
@@ -182,6 +198,11 @@ footer {
         background-color: white;
         h2 {
             grid-column: 1 / span 2;
+        }
+        .card--restaurant {
+            figure img {
+                aspect-ratio: 1/0.75;
+            }
         }
     }
     .body--menu{
