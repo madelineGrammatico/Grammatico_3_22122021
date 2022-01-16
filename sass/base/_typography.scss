@@ -20,7 +20,13 @@ body {
         font-weight: 800;
     }
 }
-
+.home__body  {
+    h2 {
+        font-size: 2em;
+        font-weight: 800;
+        align-self: flex-end;
+    }
+}
 .body--menu ~ h2 {
    
     font-weight: 800;
@@ -95,4 +101,7 @@ footer {
     font-size: 1.2em;
     font-weight: 500;
     font-family: roboto, sans-serif;
+    .footer__heading {
+        font-size: 1.2em;
+    }
 }
