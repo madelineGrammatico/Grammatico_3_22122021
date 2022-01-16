@@ -423,7 +423,7 @@ footer ul li {
     grid-template-rows: 0.2fr 1.4fr 0.4fr;
   }
   .restaurants .card--restaurant figure img {
-    aspect-ratio: 1/0.85;
+    aspect-ratio: 1/0.65;
   }
   .restaurants .card--restaurant figure figcaption {
     position: relative;
