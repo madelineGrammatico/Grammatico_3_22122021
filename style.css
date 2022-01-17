@@ -338,7 +338,7 @@ footer .list--hands::before {
 .restaurant__container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 15em 1em 4fr;
+  grid-template-rows: 15em 2em 4fr;
 }
 .restaurant__container img {
   grid-row: 1/span 2;
@@ -484,7 +484,18 @@ footer ul li {
     aspect-ratio: 1/0.75;
   }
 
+  .body--menu .logo {
+    width: 100%;
+    max-width: 1800px;
+    margin: auto;
+  }
+  .body--menu .restaurant__container {
+    background-color: #eaeaea;
+  }
   .body--menu .restaurant__form {
+    width: 100%;
+    max-width: 1800px;
+    margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
   }
   .body--menu .restaurant__form .restaurant__heading__wrapper,
@@ -494,6 +505,7 @@ footer ul li {
   }
 
   footer h2, footer ul {
+    max-width: 1200px;
     width: 50%;
     margin: auto;
   }

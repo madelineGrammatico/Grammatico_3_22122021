@@ -36,7 +36,7 @@
 .restaurant__container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 15em 1em 4fr;
+    grid-template-rows: 15em 2em 4fr;
 
     img {
         grid-row: 1/ span 2 ;
@@ -205,8 +205,20 @@ footer {
         }
     }
     .body--menu{
+        .logo {
+            width: 100%;
+            max-width: 1800px;
+            margin: auto;
+        }
+        .restaurant__container{
+            background-color: $mediumGray;
+            // background-color: $tertiary;
+        }
         
         .restaurant__form{
+            width: 100%;
+            max-width: 1800px;
+            margin: auto;
             grid-template-columns: 1fr 1fr 1fr;
             .restaurant__heading__wrapper,
             .restaurant__typesPlates,
@@ -219,6 +231,7 @@ footer {
     }
     footer {
         h2, ul{
+            max-width: 1200px;
             width: 50%;
             margin: auto;
         }
