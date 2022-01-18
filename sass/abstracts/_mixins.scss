@@ -22,7 +22,7 @@
     box-shadow: 0 7px 7px #c0c0c0;
     padding: 1rem 1.5rem;
     color: white;
-    font-weight: bold;
+    font-weight: 450;
     transition: background .5s , box-shadow .2s ease-in-out;
 
     &:hover, &:active {
@@ -32,7 +32,7 @@
 }
 
 @mixin heart {
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
     transition: color .5s ease-in-out;
     padding: 1.5em;
