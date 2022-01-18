@@ -1,5 +1,5 @@
 body {
-    font-size: 4vw;
+    font-size: 16px;
 }
 
 
@@ -7,28 +7,101 @@ body {
 * {
     font-family: 'roboto', sans-serif;
 }
-
-h2, h3 {
+.header__title {
+    @extend %text;
+    width: 75%;
+    
+    font-size: 2em;
     font-weight: 800;
 }
-
-h2 {
-    font-size: 1.3em;
+.restaurant__heading__wrapper {
+    .restaurant__heading {
+        font-size: 2em;
+        font-weight: 800;
+    }
+}
+.home__body  {
+    h2 {
+        font-size: 2em;
+        font-weight: 800;
+        align-self: flex-end;
+    }
+}
+.body--menu ~ h2 {
+   
+    font-weight: 800;
+    align-self: flex-end;
 }
 
+
 h3{
-    font-size: 1.2em;
-    padding-bottom: .5em;
+    font-size: 1.3em;
+    font-weight: 800;
+}
+.header__subtitle {
+    @extend %text;
+    max-width: 87%;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+p {
+   font-size: 1.3em;
+   font-weight: 400;
+   color: $darkGray;
 }
 
 .logo, .restaurant__heading {
     font-family: 'shrikhand', sans-sertif;
-    font-size: 2em;
+    font-size: 2.2em;
 }
 .footer__heading {
     font-family: 'shrikhand', sans-sertif;
+    font-size: 1.2em;
 }
 .restaurant__typesPlates h2{
-    font-weight: 300;
+    font-size: 1.3em;
+    font-weight: 400;
     padding-top: 1em;
+    color: $darkGray;
+}
+.header__search {
+    color: $darkGray;
+
+    input[type=search] {
+        font-size: 1.3em;
+        font-weight:600;
+        
+    }
+
+    label .fa-map-marker-alt {
+        font-size: 1.2em;
+    }
+}
+.header__button {
+    font-size: 1.3em;
+   
+}
+.card--fonctionnement {
+    font-size: 1.3em;
+    font-weight: 550;
+   .fonctionnement__card__text {
+       color: black;
+   }
+   i{
+       color: $darkGray;
+
+   }
+   &:hover {
+       background-color: $lightPurple;
+       i {color: $primary}
+   }
+}
+footer {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: roboto, sans-serif;
+    .footer__heading {
+        font-size: 1.2em;
+    }
 }
