@@ -4,8 +4,6 @@
     list-style: none;
     counter-reset: li;
     margin-left: 1em ;
-    
-    
     }
     li::before {
         @include flexCenterCenter;
