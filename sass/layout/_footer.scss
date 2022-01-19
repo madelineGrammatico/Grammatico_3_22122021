@@ -1,4 +1,19 @@
 footer {
+    grid-column: 1/ span 2;
+
+    background-color: $darkGray;
+    padding: 1.5rem;
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: .5em;
+        li {
+            display: block;
+        
+        }
+    }
+
     .footer__heading {
         padding-bottom: 1.2em;
     }
@@ -11,22 +26,7 @@ footer {
         @include listIcone;
         content: "\f4c4";
     }
-
-    background-color: $darkGray;
-    padding: 1.5rem;
    
-}
-footer {
-    grid-column: 1/ span 2;
-    ul {
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-gap: .5em;
-        li {
-            display: block;
-           
-        }
-    }
 }
 
 @media #{$medium-up} {

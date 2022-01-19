@@ -1,8 +1,15 @@
 .card--plat {
-    position: relative;
-
     @include card;
     @include apparition;
+    @include grid;
+    grid-template-columns: 3fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "title title checked"
+        "sub-title price checked";
+    grid-gap: 0;
+
+    position: relative;
    
     span{
         padding: .3em 1em;
@@ -11,6 +18,8 @@
 
     .title {
         @include cesure;
+        grid-area: title;
+
         padding-top: 1em;
         font-size: 1.2em;
         font-weight: 800;
@@ -18,11 +27,15 @@
 
     .sub-title {
         @include cesure;
+        grid-area: sub-title;
+
         display: inline;
         padding-bottom: 1em;
     }
     
     .price {
+        grid-area: price;
+
         text-align: end;
         font-weight: 800;
     }
@@ -35,6 +48,7 @@
     input[type=checkbox]:checked ~ .checked {
         @include flexCenterCenter;
         @include checked(valide);
+        grid-area: checked;
         
         right: inherit;
         color: white;
@@ -60,32 +74,5 @@
     }
     @keyframes apparition {
         from { bottom: -1em; opacity: 0; } to { opacity:1; bottom: 0em; }
-    }
-}
-
-.card--plat {
-    @include grid;
-    grid-template-columns: 3fr 1fr ;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "title title checked"
-        "sub-title price checked";
-    grid-gap: 0;
-    
-
-    .title {
-        grid-area: title;
-    }
-
-    .sub-title {
-        grid-area: sub-title;
-    }
-
-    .price {
-        grid-area: price;
-    }
-    
-    input[type=checkbox]:checked ~ .checked {
-        grid-area: checked;
     }
 }
