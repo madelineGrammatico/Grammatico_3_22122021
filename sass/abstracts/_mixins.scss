@@ -1,8 +1,17 @@
-@mixin card {
-    background-color: white;
-    box-shadow: 0 3px 6px #aaaaaa;
-    border-radius: 1em;
+@mixin typoLarge {
+    font-size: 2em;
+    font-size: 800;
+}
+
+@mixin typoMedium($weight) {
+    font-size: 1.3em;
+    font-weight: $weight;
+}
+
+@mixin cesure {
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre;
 }
 
 @mixin grid {
@@ -31,6 +40,13 @@
     }
 }
 
+@mixin card {
+    background-color: white;
+    box-shadow: 0 3px 6px #aaaaaa;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
 @mixin heart {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
@@ -43,10 +59,10 @@
     }
 }
 
-@mixin cesure {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: pre;
+@mixin listIcone {
+    display: inline-block;
+    width: 2em;
+    font-family: FontAwesome;
 }
 
 @mixin apparition {
@@ -63,20 +79,4 @@
 }
 @mixin checked($name) {
     animation: .3s ease-out 0s $name;
-}
-
-@mixin listIcone {
-    display: inline-block;
-    width: 2em;
-    font-family: FontAwesome;
-}
-
-@mixin typoLarge {
-    font-size: 2em;
-    font-size: 800;
-}
-
-@mixin typoMedium($weight) {
-    font-size: 1.3em;
-    font-weight: $weight;
 }
