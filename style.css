@@ -258,16 +258,13 @@ footer .footer__heading {
   display: grid;
   grid-gap: 1.5em;
   grid-template-rows: 4.5em 0.5fr;
+  padding: 1.4em;
+  padding-bottom: 4.5em;
 }
 .fonctionnement ol {
   display: grid;
   grid-gap: 1.5em;
   grid-gap: 2em;
-}
-
-.fonctionnement {
-  padding: 1.4em;
-  padding-bottom: 4.5em;
 }
 
 .restaurant__heading__wrapper {
@@ -318,8 +315,17 @@ footer .footer__heading {
 }
 
 footer {
+  grid-column: 1/span 2;
   background-color: #353535;
   padding: 1.5rem;
+}
+footer ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.5em;
+}
+footer ul li {
+  display: block;
 }
 footer .footer__heading {
   padding-bottom: 1.2em;
@@ -335,18 +341,6 @@ footer .list--hands::before {
   width: 2em;
   font-family: FontAwesome;
   content: "\f4c4";
-}
-
-footer {
-  grid-column: 1/span 2;
-}
-footer ul {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 0.5em;
-}
-footer ul li {
-  display: block;
 }
 
 @media only screen and (min-width:753px) {
