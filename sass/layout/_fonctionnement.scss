@@ -1,0 +1,15 @@
+.fonctionnement {
+    @include grid;
+    grid-template-rows: 4.5em .5fr;
+        
+
+    ol {
+       @include grid;
+       grid-gap: 2em;
+        
+    } 
+}
+.fonctionnement {
+    padding: 1.4em;
+    padding-bottom: 4.5em;
+}

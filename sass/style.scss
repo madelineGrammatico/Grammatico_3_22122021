@@ -8,17 +8,20 @@
 
 @import './layout/navbar';
 @import './layout/form';
+@import './layout/fonctionnement';
 @import './layout/restaurant';
 @import './layout/restaurants';
 @import './layout/footer';
-@import './layout/grid';
 
 
 @import './components/modal';
 @import './components/media';
 @import './components/search';
 @import './components/buttons';
-@import './components/cards';
+@import './components/cards/cards';
+@import './components/cards/fonctionnementCards';
+@import './components/cards/restaurantCards';
+@import './components/cards/plateCards';
 
 @import './pages/home';
 @import './pages/restaurants';
