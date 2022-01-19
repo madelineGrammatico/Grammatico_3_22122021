@@ -70,3 +70,13 @@
     width: 2em;
     font-family: FontAwesome;
 }
+
+@mixin typoLarge {
+    font-size: 2em;
+    font-size: 800;
+}
+
+@mixin typoMedium($weight) {
+    font-size: 1.3em;
+    font-weight: $weight;
+}

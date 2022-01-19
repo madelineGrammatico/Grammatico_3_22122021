@@ -107,7 +107,7 @@ body {
 .header__title {
   width: 75%;
   font-size: 2em;
-  font-weight: 800;
+  font-size: 800;
 }
 
 .restaurant__heading__wrapper .restaurant__heading {
@@ -117,7 +117,7 @@ body {
 
 .home__body h2 {
   font-size: 2em;
-  font-weight: 800;
+  font-size: 800;
   align-self: flex-end;
 }
 
@@ -165,7 +165,7 @@ p {
 }
 .header__search input[type=search] {
   font-size: 1.3em;
-  font-weight: 600;
+  font-weight: 300;
 }
 .header__search label .fa-map-marker-alt {
   font-size: 1.2em;
