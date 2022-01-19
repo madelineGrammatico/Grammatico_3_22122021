@@ -1,0 +1,59 @@
+.card--restaurant {
+    @include card; 
+    a {
+        width:100%;
+        
+    }
+    figure {
+        width: 100%;
+        margin: inherit;
+    }
+
+    img {
+        aspect-ratio: 1/.5;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    figcaption {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        padding: .8em 1em;
+    }
+
+    button {
+        text-align: end;
+    }
+    .new {
+        background-color: $tertiary;
+        color: $darkGreen;
+        padding: .5em 1em;
+        margin: 1em;
+        border-radius: .2em;
+        font-weight: 500;
+    }
+}
+.card--restaurant {
+    figure {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: .2fr 1.2fr .6fr;
+    }
+    img {
+        grid-column: 1;
+        grid-row: 1;
+        grid-row-end: span 2;
+        grid-column-end: span 3;
+    }
+    figcaption {
+        grid-column: 1 / span 2;
+    }
+    button {
+        grid-column: 3;
+    }
+    .new {
+        grid-column: 3;
+        grid-row: 1;
+    }
+}
