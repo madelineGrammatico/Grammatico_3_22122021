@@ -13,15 +13,17 @@
         left: -1em;
         width: 2em;
         height: 2em;
+
         aspect-ratio: 1/1;
         margin: 1.5em 0;
-        text-align: center;
-        direction: rtl;
+        border-radius: 50%;
+        background-color: #9356DC;
+
         content: counter(li);
         color: white;
-        background-color: #9356DC;
-        border-radius: 50%;
         font-size: .8em;
+        text-align: center;
+        direction: rtl;
     }
 
     li {
@@ -30,15 +32,18 @@
 }
 .card--fonctionnement {
     @include card;
-    overflow: inherit;
-
-    height: 4em;
 
     display: flex;
     align-items: center;
+    overflow: inherit;
+    height: 4em;
+    
     border-radius: 1.5em;
-    vertical-align: middle;
+
     background-color: $lightGray;
+
+    vertical-align: middle;
+   
 
     span {
         i {
