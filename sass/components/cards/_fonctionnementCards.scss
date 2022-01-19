@@ -1,0 +1,48 @@
+.fonctionnement {
+   
+    ol {
+    list-style: none;
+    counter-reset: li;
+    margin-left: 1em ;
+    
+    
+    }
+    li::before {
+        @include flexCenterCenter;
+        position: relative;
+        left: -1em;
+        width: 2em;
+        height: 2em;
+        aspect-ratio: 1/1;
+        margin: 1.5em 0;
+        text-align: center;
+        direction: rtl;
+        content: counter(li);
+        color: white;
+        background-color: #9356DC;
+        border-radius: 50%;
+        font-size: .8em;
+    }
+
+    li {
+        counter-increment: li;
+    }
+}
+.card--fonctionnement {
+    @include card;
+    overflow: inherit;
+
+    height: 4em;
+
+    display: flex;
+    align-items: center;
+    border-radius: 1.5em;
+    vertical-align: middle;
+    background-color: $lightGray;
+
+    span {
+        i {
+            padding-right: 1em ;
+        }
+    }
+}

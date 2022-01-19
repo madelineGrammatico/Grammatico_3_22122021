@@ -1,0 +1,36 @@
+.card--restaurant {
+    @include card; 
+    a {
+        width:100%;
+        
+    }
+    figure {
+        width: 100%;
+        margin: inherit;
+    }
+
+    img {
+        aspect-ratio: 1/.5;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    figcaption {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        padding: .8em 1em;
+    }
+
+    button {
+        text-align: end;
+    }
+    .new {
+        background-color: $tertiary;
+        color: $darkGreen;
+        padding: .5em 1em;
+        margin: 1em;
+        border-radius: .2em;
+        font-weight: 500;
+    }
+}
