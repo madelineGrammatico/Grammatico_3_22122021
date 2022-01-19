@@ -62,3 +62,30 @@
         from { bottom: -1em; opacity: 0; } to { opacity:1; bottom: 0em; }
     }
 }
+
+.card--plat {
+    @include grid;
+    grid-template-columns: 3fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "title title checked"
+        "sub-title price checked";
+    grid-gap: 0;
+    
+
+    .title {
+        grid-area: title;
+    }
+
+    .sub-title {
+        grid-area: sub-title;
+    }
+
+    .price {
+        grid-area: price;
+    }
+    
+    input[type=checkbox]:checked ~ .checked {
+        grid-area: checked;
+    }
+}

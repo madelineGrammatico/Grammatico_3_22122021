@@ -1,0 +1,42 @@
+@media #{$medium-up} {
+
+    .body--menu{
+        .restaurant__form{
+            grid-template-columns: 1fr 1fr;
+            .restaurant__heading__wrapper,
+            .restaurant__typesPlates,
+            .restaurant__button {
+                grid-column: 1 / span 2;
+            }
+        }
+        
+    }
+}
+
+@media #{$large-up} {
+    .body--menu{
+        .logo {
+            width: 100%;
+            max-width: 1800px;
+            margin: auto;
+        }
+        .restaurant__container{
+            background-color: $mediumGray;
+            // background-color: $tertiary;
+        }
+        
+        .restaurant__form{
+            width: 100%;
+            max-width: 1800px;
+            margin: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            .restaurant__heading__wrapper,
+            .restaurant__typesPlates,
+            .restaurant__button {
+                grid-column: 1 / span 3;
+            }
+        }
+        
+
+    }
+}
