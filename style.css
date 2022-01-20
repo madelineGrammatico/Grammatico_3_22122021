@@ -457,6 +457,7 @@ footer .list--hands::before {
   -webkit-text-stroke-color: black;
   transition: color 0.2s ease-in-out;
   padding: 1.5em;
+  position: relative;
 }
 .button--heart .fa-heart:active {
   color: #FF79DA;
