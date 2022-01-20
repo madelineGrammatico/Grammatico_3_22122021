@@ -40,21 +40,33 @@
         font-weight: 800;
     }
     
-    input[type=checkbox], .checked{
-        position: relative;
+    input[type=checkbox] {
         display: none;
-    }
-   
-    input[type=checkbox]:checked ~ .checked {
-        @include flexCenterCenter;
-        @include checked(valide);
-        grid-area: checked;
         
-        right: inherit;
+    }
+    .checked {
+        @include flexCenterCenter;
+        position: relative;
+        grid-area: checked;
+        right: -5em;
+        transition: right .3s ease-out;
         color: white;
         background-color: $tertiary;
         width: 100%;
         height: 100%;
+        padding: 0;
+       
+    }
+   
+    input[type=checkbox]:checked ~ .checked {
+        grid-area: checked;
+        
+        right: 0em;
+        color: white;
+        background-color: $tertiary;
+        width: 100%;
+        height: 100%;
+        padding: 1em;
 
         i {
             padding: 0 .5em;
@@ -62,9 +74,6 @@
             @include checked(rotation);
         }
         
-    }
-    @keyframes valide {
-        from { right: -5em; } to { right: 0em; }
     }
     @keyframes rotation {
         from { transform: rotate(360deg); } to { transform: rotate(0deg); }
