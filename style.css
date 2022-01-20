@@ -248,7 +248,9 @@ footer .footer__heading {
   padding: 1.5em;
 }
 .restaurant__form hr {
+  box-sizing: border-box;
   border: 0.15em solid #99E2D0;
+  background-color: #99E2D0;
   width: 3em;
   height: 0;
   margin-top: 0.5em;
