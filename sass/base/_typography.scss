@@ -11,8 +11,7 @@ body {
     @extend %text;
     width: 75%;
     
-    font-size: 2em;
-    font-weight: 800;
+    @include typoLarge;
 }
 .restaurant__heading__wrapper {
     .restaurant__heading {
@@ -22,8 +21,7 @@ body {
 }
 .home__body  {
     h2 {
-        font-size: 2em;
-        font-weight: 800;
+        @include typoLarge;
         align-self: flex-end;
     }
 }
@@ -35,18 +33,15 @@ body {
 
 
 h3{
-    font-size: 1.3em;
-    font-weight: 800;
+    @include typoMedium(800);
 }
 .header__subtitle {
     @extend %text;
     max-width: 87%;
-    font-size: 1.3em;
-    font-weight: 300;
+    @include typoMedium(300);
 }
 p {
-   font-size: 1.3em;
-   font-weight: 400;
+    @include typoMedium(400);
    color: $darkGray;
 }
 
@@ -59,8 +54,7 @@ p {
     font-size: 1.2em;
 }
 .restaurant__typesPlates h2{
-    font-size: 1.3em;
-    font-weight: 400;
+    @include typoMedium(400);
     padding-top: 1em;
     color: $darkGray;
 }
@@ -68,9 +62,7 @@ p {
     color: $darkGray;
 
     input[type=search] {
-        font-size: 1.3em;
-        font-weight:600;
-        
+        @include typoMedium(300);
     }
 
     label .fa-map-marker-alt {
@@ -82,8 +74,8 @@ p {
    
 }
 .card--fonctionnement {
-    font-size: 1.3em;
-    font-weight: 550;
+    @include typoMedium(550);
+
    .fonctionnement__card__text {
        color: black;
    }

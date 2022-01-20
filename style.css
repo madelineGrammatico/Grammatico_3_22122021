@@ -106,8 +106,8 @@ body {
 
 .header__title {
   width: 75%;
-  font-size: 2em;
-  font-weight: 800;
+  font-size: 1.8em;
+  font-weight: 750;
 }
 
 .restaurant__heading__wrapper .restaurant__heading {
@@ -116,8 +116,8 @@ body {
 }
 
 .home__body h2 {
-  font-size: 2em;
-  font-weight: 800;
+  font-size: 1.8em;
+  font-weight: 750;
   align-self: flex-end;
 }
 
@@ -165,7 +165,7 @@ p {
 }
 .header__search input[type=search] {
   font-size: 1.3em;
-  font-weight: 600;
+  font-weight: 300;
 }
 .header__search label .fa-map-marker-alt {
   font-size: 1.2em;
@@ -248,7 +248,9 @@ footer .footer__heading {
   padding: 1.5em;
 }
 .restaurant__form hr {
+  box-sizing: border-box;
   border: 0.15em solid #99E2D0;
+  background-color: #99E2D0;
   width: 3em;
   height: 0;
   margin-top: 0.5em;
@@ -510,7 +512,7 @@ footer .list--hands::before {
   height: 4em;
   border-radius: 1.5em;
   background-color: #f6f6f6;
-  vertical-align: middle;
+  padding-right: 0.5em;
 }
 .card--fonctionnement span i {
   padding-right: 1em;
